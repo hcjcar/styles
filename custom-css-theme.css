@@ -1,167 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>The Jones Center - WebTrac</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f5fbff; /* pastel blue background */
-      font-family: Arial, sans-serif;
-    }
+/*
+THE JONES CENTER – COOL BLUE THEME
+*/
 
-    /* 🔶 FIXED TOP BANNER */
-    .top-banner {
-      background-color: #154c9e;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
+body {
+  background: #e9f3fc;
+  color: #164d9c;
+}
 
-    .top-banner .left {
-      display: flex;
-      align-items: center;
-    }
+#content .inner {
+  display: block;
+}
 
-    .top-banner img {
-      height: 40px;
-      margin-right: 10px;
-    }
+#app {
+  background: none !important;
+}
 
-    .top-banner .title {
-      font-size: 18px;
-      font-weight: bold;
-    }
+h1.page-header,
+h1.header,
+h1,
+h2 {
+  color: #164d9c !important;
+  font-size: 32px !important;
+  line-height: 38px !important;
+}
 
-    .top-banner .nav {
-      display: flex;
-      gap: 20px;
-    }
+.link,
+.link:hover {
+  color: #164d9c !important;
+  text-decoration: underline !important;
+}
 
-    .top-banner .nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
+.button,
+.ui-button {
+  background: #266dd3 !important;
+  color: #fff !important;
+  border-radius: 21px !important;
+  font-size: 16px !important;
+  height: 42px !important;
+  line-height: 42px !important;
+}
 
-    .top-banner .nav a:hover {
-      text-decoration: underline;
-    }
+input[type='text'],
+input[type='password'],
+input[type='tel'],
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='tel']:focus,
+.datepicker-button {
+  border: 1px solid #164d9c;
+  border-radius: 4px;
+  background: transparent;
+  color: #164d9c;
+  font-size: 16px;
+  height: 42px;
+  line-height: 40px;
+  width: 100%;
+  max-width: 348px;
+}
 
-    /* 🔽 MAIN CONTAINER WITH SHADOW */
-    .container {
-      max-width: 400px;
-      margin: 120px auto 50px;
-      background-color: #ffffff;
-      padding: 40px 30px 35px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
+.group,
+.group.collapse,
+.group .button:disabled {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid #164d9c !important;
+  border-radius: 12px !important;
+}
 
-    .container:hover {
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-      transform: translateY(-2px);
-    }
+.message,
+.infobox {
+  padding: 15px 44px !important;
+  background: #cde3f9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cg fill='%23164d9c'%3E%3Cpath d='M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z'/%3E%3Cpath d='M7 7h2v5H7z'/%3E%3Ccircle cx='8' cy='5' r='1'/%3E%3C/g%3E%3C/svg%3E") no-repeat !important;
+  background-position: 15px 18px !important;
+  color: #164d9c !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
 
-    .reminder-box {
-      background-color: #dbefff;
-      border: 1px solid #a6c8ff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      text-align: center;
-      color: #003366;
-    }
+form .group .header.group__header {
+  background: #164d9c;
+  color: #fff !important;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 52px;
+  border-radius: 12px 12px 0 0;
+}
 
-    .login-form label {
-      display: block;
-      margin: 10px 0 5px;
-    }
+form .group .group__inner label.label * {
+  font-size: 14px;
+  line-height: 18px;
+  color: #164d9c !important;
+}
 
-    .login-form input {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
+form .group .group__inner input.fillin.validation-field {
+  border: 2px solid #1a4fbf;
+}
 
-    .login-form button {
-      width: 100%;
-      padding: 10px;
-      background-color: #2b70d7;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+form .group .group__inner .validation-message.error .validation-message__text {
+  color: #cc0000 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
 
-    .login-links {
-      text-align: center;
-      margin-top: 10px;
-    }
+.combobox {
+  background: transparent !important;
+  border: 1px solid #164d9c !important;
+  color: #164d9c !important;
+}
 
-    .login-links a {
-      color: #2b70d7;
-      text-decoration: none;
-      display: block;
-      margin: 5px 0;
-    }
+.combobox svg path {
+  fill: #164d9c;
+}
 
-    .login-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+.table th,
+.table tr:nth-child(2n) td {
+  background: rgba(22, 77, 156, 0.1) !important;
+  color: #164d9c !important;
+}
 
-  <!-- 🔶 FIXED TOP BANNER -->
-  <div class="top-banner">
-    <div class="left">
-      <img src="logo.png" alt="The Jones Center Logo">
-      <span class="title">The Jones Center</span>
-    </div>
-    <div class="nav">
-      <a href="#">Home</a>
-      <a href="#">Contact</a>
-      <a href="#">Help</a>
-    </div>
-  </div>
+.checkbox-field-wrap .checkbox {
+  background: #e9f3fc !important;
+  border: 1px solid #164d9c !important;
+}
 
-  <!-- 🔽 MAIN CONTENT -->
-  <div class="container">
-    <div class="reminder-box">
-      <h2>Important Reminder</h2>
-      <p>Please verify your email before attempting to login.</p>
-    </div>
+.checkbox.checkbox--state-checked {
+  background: #164d9c !important;
+}
 
-    <form class="login-form">
-      <label for="username">Username *</label>
-      <input type="text" id="username" name="username" required>
+.checkbox.checkbox--state-checked > svg.checkbox__check > path {
+  fill: white;
+}
 
-      <label for="password">Password *</label>
-      <input type="password" id="password" name="password" required>
+footer.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 40px;
+}
 
-      <button type="submit">Login</button>
-    </form>
+footer.footer::before {
+  content: "\00a9 2025 The Jones Center | Powered by Vermont Systems";
+  display: block;
+  margin-bottom: 10px;
+  color: #164d9c;
+}
 
-    <div class="login-links">
-      <a href="#">Forgot Username?</a>
-      <span class="separator">|</span>
-      <a href="#">Forgot Password?</a>
-      <a href="#">Don't have an account? Sign Up Now</a>
-    </div>
-  </div>
-
-</body>
-</html>
+/* Optional: remove LA Parks label if it slipped in */
+.top-banner {
+  display: none !important;
+}
