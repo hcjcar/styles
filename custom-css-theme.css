@@ -62,7 +62,7 @@ input[type='tel']:focus,
 .group.collapse,
 .group .button:disabled {
   background: transparent !important;
-  box-shadow: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;  /* <-- This is the shadow */
   border: 1px solid #164d9c !important;
   border-radius: 12px !important;
 }
@@ -146,7 +146,7 @@ footer.footer::before {
   color: #164d9c;
 }
 
-/* Optional: remove LA Parks label if it slipped in */
+/* Optional: remove label if it slipped in */
 .top-banner {
   display: none !important;
 }
