@@ -80,13 +80,17 @@ input[type='tel']:focus,
 }
 
 form .group .header.group__header {
-  background: #164d9c;
-  color: #fff !important;
+  background: transparent;
+  color: transparent !important;
+  -webkit-text-stroke: 1px #164d9c;
+  text-stroke: 1px #164d9c; /* fallback for non-webkit browsers */
   height: 52px;
   font-size: 16px;
   font-weight: 600;
   line-height: 52px;
+  border: 2px solid #164d9c;
   border-radius: 12px 12px 0 0;
+  text-align: center;
 }
 
 form .group .group__inner label.label * {
