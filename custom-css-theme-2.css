@@ -19,7 +19,7 @@ h1.page-header,
 h1.header,
 h1,
 h2:not(.subheader) {
-  color: #1E90FF !important;
+  color: #00BFFF !important;
   font-size: 40px !important;
   line-height: 46px !important;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
@@ -161,7 +161,22 @@ footer.footer::before {
   display: none !important;
 }
 
-/* Tile image styling */
+/* Tile styling for background-image blocks */
+.tile {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Tile image tag fallback (if used elsewhere) */
 .tile img {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
