@@ -145,7 +145,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 footer.footer {
   text-align: center;
   font-size: 13px;
-  color: #888;
+  color: #164d9c; /* unify to one color */
   margin-top: 40px;
 }
 
@@ -153,7 +153,7 @@ footer.footer::before {
   content: "\00a9 2025 The Jones Center | Powered by Vermont Systems";
   display: block;
   margin-bottom: 10px;
-  color: #164d9c;
+  /* remove this line if it's the same as above: color: #164d9c; */
 }
 
 /* Optional: remove label if it slipped in */
