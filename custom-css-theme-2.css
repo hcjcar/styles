@@ -18,11 +18,18 @@ body {
 h1.page-header,
 h1.header,
 h1,
-h2 {
+h2:not(.subheader) {
   color: #00BFFF !important;
   font-size: 40px !important;
   line-height: 46px !important;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+h2.subheader {
+  color: #ffffff !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 .link,
@@ -39,3 +46,141 @@ h2 {
   font-size: 16px !important;
   height: 42px !important;
   line-height: 42px !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='tel'],
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='tel']:focus,
+.datepicker-button {
+  border: 1px solid #164d9c;
+  border-radius: 4px;
+  background: transparent;
+  color: #164d9c;
+  font-size: 16px;
+  height: 42px;
+  line-height: 40px;
+  width: 100%;
+  max-width: 348px;
+}
+
+.group,
+.group.collapse,
+.group .button:disabled {
+  background: transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  border-radius: 12px !important;
+}
+
+.message,
+.infobox {
+  padding: 15px 44px !important;
+  background: #cde3f9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cg fill='%23164d9c'%3E%3Cpath d='M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z'/%3E%3Cpath d='M7 7h2v5H7z'/%3E%3Ccircle cx='8' cy='5' r='1'/%3E%3C/g%3E%3C/svg%3E") no-repeat !important;
+  background-position: 15px 18px !important;
+  color: #164d9c !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+form .group .header.group__header {
+  background: #164d9c;
+  color: #fff !important;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 52px;
+  border-radius: 12px 12px 0 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+form .group .group__inner label.label * {
+  font-size: 14px;
+  line-height: 18px;
+  color: #164d9c !important;
+}
+
+form .group .group__inner input.fillin.validation-field {
+  border: 2px solid #1a4fbf;
+}
+
+form .group .group__inner .validation-message.error .validation-message__text {
+  color: #cc0000 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.combobox {
+  background: transparent !important;
+  border: 1px solid #164d9c !important;
+  color: #164d9c !important;
+}
+
+.combobox svg path {
+  fill: #164d9c;
+}
+
+.table th,
+.table tr:nth-child(2n) td {
+  background: rgba(22, 77, 156, 0.1) !important;
+  color: #164d9c !important;
+}
+
+.checkbox-field-wrap .checkbox {
+  background: #e9f3fc !important;
+  border: 1px solid #164d9c !important;
+}
+
+.checkbox.checkbox--state-checked {
+  background: #164d9c !important;
+}
+
+.checkbox.checkbox--state-checked > svg.checkbox__check > path {
+  fill: white;
+}
+
+footer.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 40px;
+}
+
+footer.footer::before {
+  content: "\00a9 2025 The Jones Center | Powered by Vermont Systems";
+  display: block;
+  margin-bottom: 10px;
+  color: #164d9c;
+}
+
+/* Optional: remove label if it slipped in */
+.top-banner {
+  display: none !important;
+}
+
+/* Tile image styling */
+.tile img {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Global fallback: round and shadow all images */
+img {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
