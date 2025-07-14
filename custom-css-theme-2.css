@@ -23,6 +23,7 @@ h2.header {
   font-size: 28px !important;
   line-height: 36px !important;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+  text-align: center;
 }
 
 h2.header {
