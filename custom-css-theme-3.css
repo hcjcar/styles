@@ -27,7 +27,7 @@ h2.header {
 }
 
 h2.header {
-  color: #ffffff !important;
+  color: #164d9c !important;
   font-size: 24px !important;
   line-height: 30px !important;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
@@ -57,24 +57,6 @@ p {
   height: 42px !important;
   line-height: 42px !important;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
-}
-
-input[type='text'],
-input[type='password'],
-input[type='tel'],
-input[type='text']:focus,
-input[type='password']:focus,
-input[type='tel']:focus,
-.datepicker-button {
-  border: 1px solid #164d9c;
-  border-radius: 4px;
-  background: transparent;
-  color: #164d9c;
-  font-size: 16px;
-  height: 42px;
-  line-height: 40px;
-  width: 100%;
-  max-width: 348px;
 }
 
 .group,
