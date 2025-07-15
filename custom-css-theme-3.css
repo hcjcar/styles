@@ -317,3 +317,11 @@ img:hover {
   object-fit: cover;            /* ensures full coverage without stretching */
   border-radius: 16px;
 }
+
+@media only screen and (max-width: 500px) {
+      #modal-content {
+        width: 50% !important;
+        padding: 20px !important;
+        font-size: 8px;
+        min-height: auto;
+      }
