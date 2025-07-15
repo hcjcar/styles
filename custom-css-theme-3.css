@@ -155,7 +155,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 footer.footer {
   text-align: center;
   font-size: 13px;
-  color: #164d9c; /* unify to one color */
+  color: #164d9c;
   margin-top: 40px;
 }
 
@@ -163,7 +163,6 @@ footer.footer::before {
   content: "\00a9 2025 The Jones Center | Powered by Vermont Systems";
   display: block;
   margin-bottom: 10px;
-  /* remove this line if it's the same as above: color: #164d9c; */
 }
 
 /* Optional: remove label if it slipped in */
@@ -171,7 +170,7 @@ footer.footer::before {
   display: none !important;
 }
 
-/* Tile styling for background-image blocks */
+/* Tile styling */
 .tile {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -186,19 +185,7 @@ footer.footer::before {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Tile image tag fallback (if used elsewhere) */
-.tile img {
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.tile img:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-/* Global fallback: round and shadow all images */
+.tile img,
 img {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -208,4 +195,98 @@ img {
 img:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
+
+.search-criteria {
+  background-color: #e9f3fc;
+  border: 1px solid #c2d8ef;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  font-family: 'Segoe UI', sans-serif;
+  color: #164d9c;
+}
+
+.filter-collapsible {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #164d9c;
+}
+
+.label span:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  color: #164d9c;
+  margin-right: 10px;
+}
+
+.combobox-label-count {
+  font-size: 13px;
+  color: #4b75b7;
+}
+
+.combobox__list ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  border: 1px solid #b2cbea;
+  border-radius: 8px;
+  background-color: #ffffff;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.listitem {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e0ecf7;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  color: #164d9c;
+}
+
+.listitem:hover {
+  background-color: #e0edff;
+}
+
+.listitem--state-selected {
+  background-color: #266dd3;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.listitem--state-selected .listitem__text {
+  color: #ffffff;
+}
+
+.listitem__icon svg {
+  fill: #ffffff;
+  margin-right: 10px;
+}
+
+.combobox__controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.combobox__control {
+  font-size: 13px;
+  color: #266dd3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.combobox__control:hover {
+  color: #0a3c8d;
+}
+
+.combobox__control,
+.listitem {
+  transition: all 0.2s ease-in-out;
 }
