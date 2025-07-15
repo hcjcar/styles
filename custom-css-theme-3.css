@@ -293,3 +293,27 @@ img:hover {
 .result-content.tablecollapsecontainer {
   margin-top: 20px !important;
 }
+
+/* ─── TILE CUSTOMIZATION ───────────────────────────── */
+.tile {
+  width: 320px !important;       /* Adjust width */
+  height: 220px !important;      /* Adjust height */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tile img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;            /* ensures full coverage without stretching */
+  border-radius: 16px;
+}
