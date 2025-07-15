@@ -153,3 +153,11 @@ footer.footer::before {
 .top-banner {
   display: none !important;
 }
+
+@media only screen and (max-width: 500px) {
+      #modal-content {
+        width: 50% !important;
+        padding: 20px !important;
+        font-size: 8px;
+        min-height: auto;
+      }
