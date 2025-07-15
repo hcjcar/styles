@@ -273,6 +273,15 @@ img:hover {
   transition: all 0.2s ease-in-out;
 }
 
+/* ─── SEARCH RESULT CONTAINER – ROUNDED CORNERS ───────────────────────────── */
+
+.result-content.tablecollapsecontainer {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dbe8f8;
+}
+
 /* ─── LAYOUT FIXES: Prevent "Search Results" header from sitting on box ─── */
 
 .result-header {
