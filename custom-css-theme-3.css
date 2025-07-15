@@ -20,9 +20,9 @@ h1.header,
 h1,
 h2.header {
   color: #164d9c !important;
-  font-size: 28px !important;
-  line-height: 36px !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
   text-align: center;
 }
 
@@ -31,7 +31,7 @@ h2.header {
   font-size: 24px !important;
   line-height: 30px !important;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
-}Pleas
+}
 
 p {
   color: #ffffff !important;
@@ -86,8 +86,7 @@ form .group .header.group__header {
   font-weight: 600;
   line-height: 52px;
   border-radius: 12px 12px 0 0;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}
+  }
 
 form .group .group__inner label.label * {
   font-size: 14px;
