@@ -34,12 +34,9 @@ h2.header {
 }
 
 p {
-  color: #ffffff !important;
+  color: #164d9c !important;
   font-size: 20px !important;
   line-height: 32px !important;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
-  text-align: center !important;
-  font-weight: bold !important;
 }
 
 .link,
