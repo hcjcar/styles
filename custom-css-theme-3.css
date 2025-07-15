@@ -120,6 +120,10 @@ form .group .group__inner .validation-message.error .validation-message__text {
 .checkbox-field-wrap .checkbox {
   background: #e9f3fc !important;
   border: 1px solid #164d9c !important;
+  width: 20px;       /* control width */
+  height: 20px;      /* control height */
+  display: inline-block; /* ensures sizing is respected */
+  box-sizing: border-box; /* includes padding/border in size */
 }
 
 .checkbox.checkbox--state-checked {
