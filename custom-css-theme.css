@@ -31,17 +31,6 @@ h2 {
   text-decoration: underline !important;
 }
 
-.button,
-.ui-button {
-  background: #266dd3 !important;
-  color: #fff !important;
-  border-radius: 21px !important;
-  font-size: 16px !important;
-  height: 42px !important;
-  line-height: 42px !important;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
-}
-
 input[type='text'],
 input[type='password'],
 input[type='tel'],
