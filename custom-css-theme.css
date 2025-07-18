@@ -2,6 +2,10 @@
 THE JONES CENTER – COOL BLUE THEME
 */
 
+#content {
+  max-with: 100%;
+}
+
 #content .inner {
   display: block;
 }
