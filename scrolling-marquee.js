@@ -1,4 +1,3 @@
-
     const textPath = document.getElementById("scrollingText");
     let offset = 0;
 
