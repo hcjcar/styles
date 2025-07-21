@@ -318,6 +318,11 @@ img:hover {
   border-radius: 16px;
 }
 
+.group group__controls group--state-container {
+  background-color: #164d9c !important;
+  boarder-radius: 0px !important;
+}
+
 @media only screen and (max-width: 500px) {
       #modal-content {
         width: 75% !important;
