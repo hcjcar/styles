@@ -1,4 +1,4 @@
-  <script>
+
     const textPath = document.getElementById("scrollingText");
     let offset = 0;
 
@@ -9,7 +9,4 @@
       requestAnimationFrame(scroll);
     }
 
-    requestAnimationFrame(scroll);
-  </script>
-</body>
-</html>
+    requestAnimationFrame(scroll)
