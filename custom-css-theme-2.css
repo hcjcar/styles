@@ -185,10 +185,14 @@ form .group .group__inner .validation-message.error .validation-message__text {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 500px) {
+@media (max-width: 768px) {
       #modal-content {
         width: 50% !important;
         padding: 20px !important;
-        font-size: 8px;
+        font-size: 16px;
         min-height: auto;
+        .button {
+height:auto !important;
+        }
+      }
       }
