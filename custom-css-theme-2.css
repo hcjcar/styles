@@ -189,10 +189,16 @@ form .group .group__inner .validation-message.error .validation-message__text {
       #modal-content {
         width: 50% !important;
         padding: 20px !important;
-        font-size: 12px;
+        font-size: 12px !important;
         min-height: auto;
-        .button {
+}
+ 
+.button {
 height:auto !important;
-        }
+}
+ 
+#content {
+padding:0px !important;
+}
       }
       }
