@@ -120,17 +120,23 @@ form .group .group__inner .validation-message.error .validation-message__text {
   color: #164d9c !important;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+
 .checkbox-field-wrap .checkbox {
-  background: #e9f3fc !important;
-  border: 1px solid #164d9c !important;
-  width: 20px;       /* control width */
+  background: #A1EAF0 !important;
+  border: 1px solid #000000 !important;
+  width: 30px;       /* control width */
   height: 20px;      /* control height */
   display: inline-block; /* ensures sizing is respected */
   box-sizing: border-box; /* includes padding/border in size */
 }
 
 .checkbox.checkbox--state-checked {
-  background: #164d9c !important;
+  background: #4CD9E6 !important;
 }
 
 .checkbox.checkbox--state-checked > svg.checkbox__check > path {
