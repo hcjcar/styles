@@ -161,11 +161,9 @@ form .group .group__inner .validation-message.error .validation-message__text {
 img {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 img:hover {
-  transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
