@@ -526,16 +526,21 @@ input[type="submit"][value=" "] {
   cursor: pointer;
 }
 
-.tile-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px; /* space between tiles */
-  padding: 20px;
+/* === CUSTOM TILE GRID LAYOUT === */
+.tile-wrapper,
+.result-grid,
+.ui-grid.ui-widget {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  gap: 20px;
 }
 
-.result-content {
-  border: 1px solid #ccc;
-  padding: 16px;
-  background-color: #fff;
-  border-radius: 8px;
+.result-content,
+.programResultTile,
+.ui-widget-content {
+  width: auto !important;
+  max-width: 300px;
+  flex: 0 0 auto;
 }
+
