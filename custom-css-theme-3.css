@@ -367,21 +367,4 @@ img:hover {
 .cart-button--state-multiselect:hover {
   background-color: #00a845;
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .tile-wrapper,
-  .result-grid,
-  .ui-grid.ui-widget,
-  .result-content-container {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (min-width: 1025px) {
-  .tile-wrapper,
-  .result-grid,
-  .ui-grid.ui-widget,
-  .result-content-container {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
 }
