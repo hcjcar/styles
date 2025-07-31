@@ -422,29 +422,49 @@ img:hover {
   cursor: pointer;
 }
 
-/* Style the "Add to Cart" button */
+/* --- "Add to Cart" Button --- */
 a.cart-button--state-mutliselect {
-  background-color: #00c853 !important;  /* Green background */
-  color: white !important;               /* Make text visible */
+  background-color: #00c853 !important;
+  color: white !important;
   font-weight: bold;
   font-size: 1rem;
-  border-radius: 25px;
-  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Button hover effect */
 a.cart-button--state-mutliselect:hover {
   background-color: #00a845 !important;
   color: #fff !important;
   text-decoration: none;
 }
 
+/* --- Checkbox Fix for Listitems --- */
+.listitem__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #A1EAF0;
+  border: 1.5px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.listitem__icon .svg-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.listitem__icon .svg-icon path {
+  fill: #272c33;
+}
 /* Pseudo-element to force button label text if HTML uses blank value */
 input[type="button"][value=" "]::after,
 input[type="submit"][value=" "]::after {
