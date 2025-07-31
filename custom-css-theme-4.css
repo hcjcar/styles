@@ -403,10 +403,11 @@ input[type="submit"][value=" "] {
   overflow: hidden;
   flex: 1 1 calc(33.333% - 1rem);
   max-width: calc(33.333% - 1rem);
-  margin: 0;
   font-family: "Segoe UI", sans-serif;
   display: flex;
   flex-direction: column;
+  height: 450px; /* <-- FIXED HEIGHT (adjust as needed) */
+  box-sizing: border-box;
 }
 
 /* Top section (image area) */
