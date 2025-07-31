@@ -192,7 +192,21 @@ background: #dbf7fa;
 .button {
 height:auto !important;
 }
- 
+
+.button.cart-button--state-mutliselect,
+.cart-button--state-mutliselect,
+.result-content .table td a.cart-button--state-mutliselect,
+a.cart-button--state-mutliselect {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 8px; /* optional, reduces roundness */
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #content {
 padding:0px !important;
 }
