@@ -307,18 +307,6 @@ img:hover {
   background-position: center;
 }
 
-.tile:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-.tile img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;            /* ensures full coverage without stretching */
-  border-radius: 16px;
-}
-
 .group group__controls group--state-container {
   background-color: #164d9c !important;
   boarder-radius: 0px !important;
