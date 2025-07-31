@@ -14,7 +14,7 @@ THE JONES CENTER – COOL BLUE THEME
   background: none !important;
 }
 
-#vsi-footer {
+#vsi-footer {F
   background-color: #4cd9e6;color:black;
 }
 
@@ -332,8 +332,8 @@ img:hover {
 /* Shared button styles */
 .result-content .icon-button,
 .result-content .cart-button--state-multiselect {
-  background-color: #E5F3FD;         /* light blue background */
-  border: 1.5px solid #000000;       /* solid black border */
+  background-color: #E5F3FD !important;         /* light blue background */
+  border: 1.5px solid #000000 !important;       /* solid black border */
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 6px;                /* optional: to match your button style */
