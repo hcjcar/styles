@@ -1,5 +1,5 @@
 /*
-THE JONES CENTER – COOL BLUE THEME
+THE JONES CENTER – COOL BLUE THEME (CLEAN TILES)
 */
 
 #content {
@@ -15,7 +15,8 @@ THE JONES CENTER – COOL BLUE THEME
 }
 
 #vsi-footer {
-  background-color: #4cd9e6;color:black;
+  background-color: #4cd9e6;
+  color: black;
 }
 
 h1.page-header,
@@ -86,7 +87,7 @@ form .group .header.group__header {
   font-weight: 600;
   line-height: 52px;
   border-radius: 12px 12px 0 0;
-  }
+}
 
 form .group .group__inner label.label * {
   font-size: 14px;
@@ -122,8 +123,8 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 .checkbox {
   display: flex;
-  align-items: center;   /* vertical centering */
-  justify-content: center; /* horizontal centering */
+  align-items: center;
+  justify-content: center;
 }
 
 .checkbox-field-wrap .checkbox {
@@ -133,7 +134,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
   height: 24px;
   display: inline-block;
   box-sizing: border-box;
-  transition: box-shadow 0.2s ease; /* smooth hover transition */
+  transition: box-shadow 0.2s ease;
 }
 
 .checkbox-field-wrap .checkbox:hover {
@@ -149,38 +150,11 @@ form .group .group__inner .validation-message.error .validation-message__text {
   fill: white;
 }
 
-
-/* Optional: remove label if it slipped in */
 .top-banner {
   display: none !important;
 }
 
-/* Tile styling */
-.tile {
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-size: cover;
-  background-position: center;
-}
-
-.tile:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-.tile img,
-img {
-  border-radius: 16px;
-}
-
-img:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-/* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
-
+/* Search criteria styling */
 .search-criteria {
   background-color: #e9f3fc;
   border: 1px solid #c2d8ef;
@@ -273,16 +247,13 @@ img:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* ─── SEARCH RESULT CONTAINER – ROUNDED CORNERS ───────────────────────────── */
-
+/* Search result container */
 .result-content.tablecollapsecontainer {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   border: 1px solid #dbe8f8;
 }
-
-/* ─── LAYOUT FIXES: Prevent "Search Results" header from sitting on box ─── */
 
 .result-header {
   margin-bottom: 20px !important;
@@ -295,114 +266,89 @@ img:hover {
   margin-top: 20px !important;
 }
 
-/* ─── TILE CUSTOMIZATION ───────────────────────────── */
-.tile {
-  width: 320px !important;       /* Adjust width */
-  height: 220px !important;      /* Adjust height */
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-size: cover;
-  background-position: center;
-}
-
-.tile:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-.tile img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;            /* ensures full coverage without stretching */
-  border-radius: 16px;
-}
-
-.group group__controls group--state-container {
-  background-color: #164d9c !important;
-  boarder-radius: 0px !important;
-}
-
-.svg-icon .svg-fill {
-  position:relative;
-}
-
-/* Container layout for 3-column tile grid */
+/* CLEAN TILE LAYOUT - Like Second Image */
 .rect.group__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* center row */
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  box-sizing: border-box;
+  padding: 24px;
 }
 
-/* Each tile */
+/* Individual tile styling */
 .result-content {
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  flex: 0 0 calc(33.333% - 2rem); /* 3 in a row, with spacing */
-  max-width: calc(33.333% - 2rem);
-  font-family: "Segoe UI", sans-serif;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e8eef7;
 }
 
-/* Top section (image area) */
+.result-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Image at top of tile */
 .result-header {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative;
 }
 
 .result-header__image-container {
   width: 100%;
-  height: auto;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .result-header__image-container img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  margin-top: 0 !important;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  border-radius: 0;
+  margin: 0 !important;
 }
 
-/* Text section */
+/* Content below image */
 .result-header__info {
-  padding: 1rem;
+  padding: 20px;
   background-color: #fff;
   text-align: left;
+  flex-grow: 1;
 }
 
 .result-header__info h3,
 .result-header__info .program-name {
-  font-size: 1.2rem;
-  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  margin: 0 0 12px 0;
   font-weight: 600;
-  color: #222;
+  color: #164d9c;
+  line-height: 1.3;
 }
 
 .result-header__info p,
 .result-header__info .program-details {
-  margin: 0.3rem 0;
+  margin: 8px 0;
   font-size: 0.9rem;
-  color: #555;
+  color: #164d9c;
+  line-height: 1.4;
+  text-shadow: none !important;
+  text-align: left !important;
 }
 
-/* Table at bottom of tile */
+/* Clean button styling */
 .result-content table {
   width: 100%;
-  padding: 0.5rem 1rem 1rem;
+  margin: 0;
+  padding: 0 20px 20px 20px;
   border-collapse: collapse;
   background-color: #fff;
 }
@@ -410,40 +356,33 @@ img:hover {
 .result-content table td {
   text-align: center;
   vertical-align: middle;
-  padding: 0.5rem;
+  padding: 0;
 }
 
-/* Shared button styles */
-.result-content .icon-button,
-.result-content .cart-button--state-mutliselect {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-/* --- "Add to Cart" Button --- */
+/* Proper "Add to Cart" button */
 a.cart-button--state-mutliselect {
-  background-color: #00c853 !important;
+  background-color: #164d9c !important;
   color: white !important;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 6px;
-  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 12px 24px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
   width: 100%;
   box-sizing: border-box;
+  transition: background-color 0.2s ease;
+  border: none;
 }
 
 a.cart-button--state-mutliselect:hover {
-  background-color: #00a845 !important;
+  background-color: #0f3a7a !important;
   color: #fff !important;
   text-decoration: none;
 }
 
-/* --- Checkbox Fix for Listitems --- */
+/* Fix for checkbox styling in lists */
 .listitem__icon {
   display: flex;
   align-items: center;
@@ -465,7 +404,8 @@ a.cart-button--state-mutliselect:hover {
 .listitem__icon .svg-icon path {
   fill: #272c33;
 }
-/* Pseudo-element to force button label text if HTML uses blank value */
+
+/* Fix for empty button values */
 input[type="button"][value=" "]::after,
 input[type="submit"][value=" "]::after {
   content: "Add to Cart";
@@ -474,12 +414,18 @@ input[type="submit"][value=" "]::after {
   top: 0;
   width: 100%;
   text-align: center;
-  padding: 0.4rem 0;
-  background-color: #00c853;
+  padding: 12px 0;
+  background-color: #164d9c;
   color: white;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
   pointer-events: none;
+}
+
+input[type="button"][value=" "]:hover::after,
+input[type="submit"][value=" "]:hover::after {
+  background-color: #0f3a7a;
 }
 
 input[type="button"][value=" "],
@@ -489,6 +435,30 @@ input[type="submit"][value=" "] {
   background: transparent;
   border: none;
   width: 100%;
-  height: 2.5rem;
+  height: 44px;
   cursor: pointer;
+}
+
+/* Remove any conflicting tile styles */
+.tile {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.tile img,
+img {
+  border-radius: 16px;
+}
+
+img:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
