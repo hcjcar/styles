@@ -455,6 +455,8 @@ img {
 }
 
 .result-content {
+.programResultTile,
+.ui-widget-content {
   width: auto !important;
   max-width: 300px;
   flex: 0 0 auto;
