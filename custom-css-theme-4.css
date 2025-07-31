@@ -324,8 +324,9 @@ img:hover {
   boarder-radius: 0px !important;
 }
 
-
-.svg-icon svg-fill {position:relative;}
+.svg-icon .svg-fill {
+  position:relative;
+}
 
 /* Container layout for 3-column tile grid */
 .result-content-container {
