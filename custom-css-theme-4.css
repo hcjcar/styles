@@ -1,5 +1,5 @@
 /*
-THE JONES CENTER – WARM COLORFUL THEME
+THE JONES CENTER – COOL BLUE THEME
 */
 
 #content {
@@ -15,263 +15,229 @@ THE JONES CENTER – WARM COLORFUL THEME
 }
 
 #vsi-footer {
-  background-color: #ff6b35;
-  color: white;
+  background-color: #4cd9e6;color:black;
 }
 
 h1.page-header,
 h1.header,
 h1,
 h2.header {
-  color: #2c3e50 !important;
+  color: #164d9c !important;
   font-size: 32px !important;
   line-height: 40px !important;
-  text-shadow: none !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
   text-align: left;
-  font-weight: 600;
 }
 
 h2.header {
-  color: #2c3e50 !important;
+  color: #164d9c !important;
   font-size: 24px !important;
   line-height: 30px !important;
-  text-shadow: none !important;
-  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 p {
-  color: #2c3e50 !important;
-  font-size: 16px !important;
-  line-height: 24px !important;
-  text-shadow: none !important;
-  text-align: left;
+  color: #164d9c !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
+  text-align: center;
 }
 
 .link,
 .link:hover {
-  color: #e74c3c !important;
+  color: #164d9c !important;
   text-decoration: underline !important;
 }
 
 .button,
 .ui-button {
-  border-radius: 12px !important;
+  border-radius: 8px !important;
   font-size: 16px !important;
   height: 42px !important;
   line-height: 42px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
-  background: linear-gradient(135deg, #ff6b35, #f39c12) !important;
-  color: white !important;
-  border: none !important;
-  font-weight: 600;
-}
-
-.button:hover,
-.ui-button:hover {
-  background: linear-gradient(135deg, #e55a2b, #e67e22) !important;
-  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
 .group,
 .group.collapse,
 .group .button:disabled {
-  background: white !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
-  border: 1px solid #e8e8e8 !important;
-  border-radius: 16px !important;
+  background: transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  border-radius: 12px !important;
 }
 
 .message,
 .infobox {
-  padding: 20px !important;
-  background: #fff3cd !important;
-  border-left: 4px solid #ffc107 !important;
-  color: #856404 !important;
+  padding: 15px 44px !important;
+  background: #cde3f9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cg fill='%23164d9c'%3E%3Cpath d='M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z'/%3E%3Cpath d='M7 7h2v5H7z'/%3E%3Ccircle cx='8' cy='5' r='1'/%3E%3C/g%3E%3C/svg%3E") no-repeat !important;
+  background-position: 15px 18px !important;
+  color: #164d9c !important;
   font-size: 16px !important;
-  line-height: 24px !important;
-  border-radius: 8px;
-  margin: 16px 0;
+  line-height: 20px !important;
 }
 
 form .group .header.group__header {
-  background: linear-gradient(135deg, #2c3e50, #34495e);
+  background: #164d9c;
   color: #ffffff !important;
   height: 52px;
   font-size: 16px;
   font-weight: 600;
   line-height: 52px;
-  border-radius: 16px 16px 0 0;
-}
+  border-radius: 12px 12px 0 0;
+  }
 
 form .group .group__inner label.label * {
   font-size: 14px;
   line-height: 18px;
-  color: #2c3e50 !important;
-  font-weight: 500;
+  color: #164d9c !important;
 }
 
 form .group .group__inner input.fillin.validation-field {
-  border: 2px solid #3498db;
-  border-radius: 8px;
-  padding: 12px;
+  border: 2px solid #1a4fbf;
 }
 
 form .group .group__inner .validation-message.error .validation-message__text {
-  color: #e74c3c !important;
+  color: #cc0000 !important;
   font-size: 12px !important;
   line-height: 16px !important;
 }
 
 .combobox {
-  background: white !important;
-  border: 2px solid #bdc3c7 !important;
-  color: #2c3e50 !important;
-  border-radius: 8px;
+  background: transparent !important;
+  border: 1px solid #164d9c !important;
+  color: #164d9c !important;
 }
 
 .combobox svg path {
-  fill: #2c3e50;
+  fill: #164d9c;
 }
 
 .table th,
 .table tr:nth-child(2n) td {
-  background: #f8f9fa !important;
-  color: #2c3e50 !important;
+  background: rgba(22, 77, 156, 0.1) !important;
+  color: #164d9c !important;
 }
 
 .checkbox {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
 }
 
 .checkbox-field-wrap .checkbox {
-  background: #27ae60 !important;
-  border: 2px solid #27ae60 !important;
+  background: #A1EAF0 !important;
+  border: 1.5px solid #000000 !important;
   width: 24px;
   height: 24px;
   display: inline-block;
   box-sizing: border-box;
-  transition: all 0.2s ease;
-  border-radius: 6px;
+  transition: box-shadow 0.2s ease; /* smooth hover transition */
 }
 
 .checkbox-field-wrap .checkbox:hover {
-  box-shadow: 0 0 8px rgba(39, 174, 96, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transform: scale(1.05);
 }
 
 .checkbox.checkbox--state-checked {
-  background: #27ae60 !important;
+  background: #33c5ce !important;
 }
 
 .checkbox.checkbox--state-checked > svg.checkbox__check > path {
   fill: white;
 }
 
+
+/* Optional: remove label if it slipped in */
 .top-banner {
   display: none !important;
 }
 
-/* Tile styling with colorful gradient overlays */
+/* Tile styling */
 .tile {
   border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-size: cover;
   background-position: center;
-  position: relative;
-}
-
-.tile::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(52, 152, 219, 0.1));
-  pointer-events: none;
-  z-index: 1;
 }
 
 .tile:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
 .tile img,
 img {
   border-radius: 16px;
-  transition: transform 0.3s ease;
 }
 
 img:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Search criteria with warm colors */
+/* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
+
 .search-criteria {
-  background: linear-gradient(135deg, #fff, #f8f9fa);
-  border: 1px solid #e9ecef;
-  border-radius: 16px;
-  padding: 24px;
-  margin: 24px 0;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  background-color: #e9f3fc;
+  border: 1px solid #c2d8ef;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
   font-family: 'Segoe UI', sans-serif;
-  color: #2c3e50;
+  color: #164d9c;
 }
 
 .filter-collapsible {
   background: none;
   border: none;
   cursor: pointer;
-  color: #2c3e50;
-  font-weight: 600;
+  color: #164d9c;
 }
 
 .label span:first-child {
   font-weight: bold;
   font-size: 16px;
-  color: #2c3e50;
+  color: #164d9c;
   margin-right: 10px;
 }
 
 .combobox-label-count {
   font-size: 13px;
-  color: #7f8c8d;
+  color: #4b75b7;
 }
 
 .combobox__list ul {
   list-style: none;
   padding: 0;
   margin: 12px 0;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
+  border: 1px solid #b2cbea;
+  border-radius: 8px;
   background-color: #ffffff;
   max-height: 200px;
   overflow-y: auto;
 }
 
 .listitem {
-  padding: 12px 16px;
-  border-bottom: 1px solid #f1f2f6;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e0ecf7;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
   display: flex;
   align-items: center;
-  color: #2c3e50;
+  color: #164d9c;
 }
 
 .listitem:hover {
-  background: linear-gradient(135deg, #3498db, #2980b9);
-  color: white;
+  background-color: #e0edff;
 }
 
 .listitem--state-selected {
-  background: linear-gradient(135deg, #27ae60, #229954);
+  background-color: #266dd3;
   color: #ffffff;
   font-weight: bold;
 }
@@ -293,65 +259,80 @@ img:hover {
 
 .combobox__control {
   font-size: 13px;
-  color: #e74c3c;
+  color: #266dd3;
   text-decoration: underline;
   cursor: pointer;
-  font-weight: 500;
 }
 
 .combobox__control:hover {
-  color: #c0392b;
+  color: #0a3c8d;
 }
 
-/* Search result container with modern styling */
-.result-content.tablecollapsecontainer {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e9ecef;
-  background: white;
+.combobox__control,
+.listitem {
+  transition: all 0.2s ease-in-out;
 }
+
+/* ─── SEARCH RESULT CONTAINER – ROUNDED CORNERS ───────────────────────────── */
+
+.result-content.tablecollapsecontainer {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dbe8f8;
+}
+
+/* ─── LAYOUT FIXES: Prevent "Search Results" header from sitting on box ─── */
 
 .result-header {
-  margin-bottom: 24px !important;
-  border-radius: 16px 16px 0 0 !important;
+  margin-bottom: 20px !important;
+  border-radius: 12px 12px 0 0 !important;
   overflow: hidden;
   box-shadow: none !important;
 }
 
 .result-content.tablecollapsecontainer {
-  margin-top: 24px !important;
+  margin-top: 20px !important;
 }
 
-/* Modern tile grid layout */
+/* ─── TILE CUSTOMIZATION ───────────────────────────── */
 .tile {
-  width: 320px !important;
-  height: 220px !important;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 320px !important;       /* Adjust width */
+  height: 220px !important;      /* Adjust height */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-size: cover;
   background-position: center;
 }
 
 .tile:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
 .tile img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover;
-  border-radius: 20px;
+  object-fit: cover;            /* ensures full coverage without stretching */
+  border-radius: 16px;
+}
+
+.group group__controls group--state-container {
+  background-color: #164d9c !important;
+  boarder-radius: 0px !important;
+}
+
+.svg-icon .svg-fill {
+  position:relative;
 }
 
 /* Container layout for 3-column tile grid */
 .rect.group__inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* center row */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -359,37 +340,25 @@ img:hover {
   box-sizing: border-box;
 }
 
-/* Each tile with colorful accents */
+/* Each tile */
 .result-content {
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  flex: 0 0 calc(33.333% - 2rem);
+  flex: 0 0 calc(33.333% - 2rem); /* 3 in a row, with spacing */
   max-width: calc(33.333% - 2rem);
   font-family: "Segoe UI", sans-serif;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  transition: all 0.3s ease;
-  position: relative;
 }
 
-.result-content:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-}
-
-/* Add colorful top border to each tile */
-.result-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #ff6b35, #f39c12, #27ae60, #3498db, #9b59b6);
-  z-index: 2;
+/* Top section (image area) */
+.result-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 .result-header__image-container {
@@ -404,35 +373,36 @@ img:hover {
   height: auto;
   display: block;
   margin-top: 0 !important;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
+/* Text section */
 .result-header__info {
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: #fff;
   text-align: left;
 }
 
 .result-header__info h3,
 .result-header__info .program-name {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0 0 0.5rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: #222;
 }
 
 .result-header__info p,
 .result-header__info .program-details {
-  margin: 0.5rem 0;
-  font-size: 0.95rem;
-  color: #7f8c8d;
-  line-height: 1.5;
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #555;
 }
 
+/* Table at bottom of tile */
 .result-content table {
   width: 100%;
-  padding: 0.5rem 1.5rem 1.5rem;
+  padding: 0.5rem 1rem 1rem;
   border-collapse: collapse;
   background-color: #fff;
 }
@@ -440,46 +410,50 @@ img:hover {
 .result-content table td {
   text-align: center;
   vertical-align: middle;
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
-/* Vibrant "Add to Cart" Button */
+/* Shared button styles */
+.result-content .icon-button,
+.result-content .cart-button--state-mutliselect {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* --- "Add to Cart" Button --- */
 a.cart-button--state-mutliselect {
-  background: linear-gradient(135deg, #27ae60, #2ecc71) !important;
+  background-color: #00c853 !important;
   color: white !important;
   font-weight: bold;
   font-size: 1rem;
-  border-radius: 12px;
-  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
   display: inline-block;
   text-align: center;
   text-decoration: none;
   width: 100%;
   box-sizing: border-box;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
 }
 
 a.cart-button--state-mutliselect:hover {
-  background: linear-gradient(135deg, #229954, #27ae60) !important;
+  background-color: #00a845 !important;
   color: #fff !important;
   text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
 }
 
-/* Colorful checkbox styling */
+/* --- Checkbox Fix for Listitems --- */
 .listitem__icon {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 24px;
   height: 24px;
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
-  border: 2px solid #27ae60;
-  border-radius: 6px;
+  background-color: #A1EAF0;
+  border: 1.5px solid #000000;
+  border-radius: 4px;
   box-sizing: border-box;
-  transition: all 0.2s ease;
 }
 
 .listitem__icon .svg-icon {
@@ -489,10 +463,9 @@ a.cart-button--state-mutliselect:hover {
 }
 
 .listitem__icon .svg-icon path {
-  fill: white;
+  fill: #272c33;
 }
-
-/* Enhanced button styling for empty value buttons */
+/* Pseudo-element to force button label text if HTML uses blank value */
 input[type="button"][value=" "]::after,
 input[type="submit"][value=" "]::after {
   content: "Add to Cart";
@@ -501,14 +474,12 @@ input[type="submit"][value=" "]::after {
   top: 0;
   width: 100%;
   text-align: center;
-  padding: 0.75rem 0;
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  padding: 0.4rem 0;
+  background-color: #00c853;
   color: white;
-  border-radius: 12px;
+  border-radius: 6px;
   font-weight: bold;
   pointer-events: none;
-  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
-  transition: all 0.3s ease;
 }
 
 input[type="button"][value=" "],
@@ -518,13 +489,6 @@ input[type="submit"][value=" "] {
   background: transparent;
   border: none;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   cursor: pointer;
-}
-
-input[type="button"][value=" "]:hover::after,
-input[type="submit"][value=" "]:hover::after {
-  background: linear-gradient(135deg, #229954, #27ae60);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(39, 174, 96, 0.4);
 }
