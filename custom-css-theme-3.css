@@ -332,11 +332,15 @@ img:hover {
 /* Shared button styles */
 .result-content .icon-button,
 .result-content .cart-button--state-multiselect {
-  background: none;
-  border: none;
+  background-color: #E5F3FD;         /* light blue background */
+  border: 1.5px solid #000000;       /* solid black border */
   font-size: 1.2rem;
   cursor: pointer;
+  border-radius: 6px;                /* optional: to match your button style */
+  padding: 0.4rem 1rem;              /* optional: gives it shape */
+  transition: background 0.3s ease, color 0.3s ease;
 }
+
 
 /* Default (unselected) state */
 .cart-button--state-multiselect {
