@@ -477,3 +477,49 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   text-indent: -9999px;
 }
+
+/* Parent container that holds dropdown + tiles */
+#pmwebsearch_nextgensresultsgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Individual sections inside the container */
+#pmwebsearch_nextgencontrolsgroup,
+#pmwebsearch_nextgenresultsgroup {
+  width: 100%;
+  margin: 0;
+  float: none;
+}
+
+/* Make sure tiles flow naturally */
+.result-content {
+  float: none !important;
+  display: block;
+}
+
+#pmwebsearch_nextgencontrolsgroup {
+  background: #d6f0ff;
+}
+#pmwebsearch_nextgenresultsgroup {
+  background: #fbe6ff;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tile-wrapper,
+  .result-grid,
+  .ui-grid.ui-widget,
+  .result-content-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .tile-wrapper,
+  .result-grid,
+  .ui-grid.ui-widget,
+  .result-content-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
