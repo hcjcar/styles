@@ -525,3 +525,17 @@ input[type="submit"][value=" "] {
   height: 2.5rem;
   cursor: pointer;
 }
+
+.tile-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px; /* space between tiles */
+  padding: 20px;
+}
+
+.result-content {
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+}
