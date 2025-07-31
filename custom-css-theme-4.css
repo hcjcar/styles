@@ -320,10 +320,12 @@ img {
 /* Shared button styles */
 .result-content .icon-button,
 .result-content .cart-button--state-mutliselect {
-  background: none;
-  border: none;
+  background-color: #e6f2ff;  /* very light blue */
+  border: 2px solid #000000;  /* black border */
   font-size: 1.2rem;
   cursor: pointer;
+  padding: 6px 12px;          /* optional: for better shape */
+  border-radius: 6px;         /* optional: for rounded corners */
 }
 
 /* “Add to Cart” button styling */
