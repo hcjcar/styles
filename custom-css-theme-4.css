@@ -425,7 +425,7 @@ input[type="submit"][value=" "] {
 }
 
 .result-header__image-container img {
-  width: 120%;
+  width: 100;
   height: auto;
   display: block;
   margin-top: 0 !important;
