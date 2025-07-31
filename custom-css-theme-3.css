@@ -325,7 +325,9 @@ img:hover {
 }
 
 
-.svg-icon svg-fill {position:relative;}
+.svg-icon .svg-fill {
+  position:relative;
+}
 
 /* Shared button styles */
 .result-content .icon-button,
