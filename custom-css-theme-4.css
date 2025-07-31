@@ -172,11 +172,11 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 .tile img,
 img {
+  width: 100%; /* or increase this as needed */
+  max-width: 100%;
+  height: auto;
   border-radius: 16px;
-}
-
-img:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  display: block;
 }
 
 /* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
@@ -403,22 +403,6 @@ img:hover {
   display: flex;
   flex-direction: column;
   padding: 0;
-}
-
-.result-header__image-container {
-  width: 100%;
-  height: auto;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.result-header__image-container img {
-  width: 200%;
-  height: auto;
-  display: block;
-  margin-top: 0 !important;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
 }
 
 /* Text section */
