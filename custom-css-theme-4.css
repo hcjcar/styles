@@ -448,7 +448,7 @@ img {
 .rect.group__inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* center row */
+  justify-content: right; /* center row */
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
