@@ -324,10 +324,5 @@ img:hover {
   boarder-radius: 0px !important;
 }
 
-@media only screen and (max-width: 500px) {
-      #modal-content {
-        width: 75% !important;
-        padding: 20px !important;
-        font-size: 8px;
-        min-height: auto;
-      }
+
+.svg-icon svg-fill {position:relative;}
