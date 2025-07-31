@@ -425,7 +425,7 @@ img:hover {
 }
 
 .result-header__image-container img {
-  width: 100;
+  width: 200%;
   height: auto;
   display: block;
   margin-top: 0 !important;
