@@ -331,9 +331,11 @@ img:hover {
 .result-content-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 1rem;
-  padding: 1rem;
+  justify-content: center; /* Center tiles in each row */
+  gap: 2rem;               /* Space between tiles */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Each tile */
@@ -342,12 +344,12 @@ img:hover {
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  flex: 1 1 calc(33.333% - 1rem);
-  max-width: calc(33.333% - 1rem);
-  margin: 0;
+  flex: 0 0 calc(33.333% - 2rem); /* 3 in a row, with spacing */
+  max-width: calc(33.333% - 2rem);
   font-family: "Segoe UI", sans-serif;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 /* Top section (image area) */
