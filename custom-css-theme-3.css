@@ -392,7 +392,12 @@ img:hover {
   display: block;
 }
 
-
+#pmwebsearch_nextgencontrolsgroup {
+  background: #d6f0ff;
+}
+#pmwebsearch_nextgenresultsgroup {
+  background: #fbe6ff;
+}
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .tile-wrapper,
