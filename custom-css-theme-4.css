@@ -421,24 +421,27 @@ img:hover {
   cursor: pointer;
 }
 
-/* “Add to Cart” button styling */
-.cart-button--state-mutliselect {
-  background-color: #00c853;
-  color: white;
-  border-radius: 20px;
-  padding: 0.4rem 1.2rem;
+/* Style the "Add to Cart" button */
+a.cart-button--state-mutliselect {
+  background-color: #00c853 !important;  /* Green background */
+  color: white !important;               /* Make text visible */
+  font-weight: bold;
   font-size: 1rem;
-  font-weight: 500;
+  border-radius: 25px;
+  padding: 0.6rem 1.2rem;
   display: inline-block;
-  width: auto;
-  min-width: 70px;
-  transition: background 0.3s ease;
-  position: relative;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-/* Hover effect */
-.cart-button--state-mutliselect:hover {
-  background-color: #00a845;
+/* Button hover effect */
+a.cart-button--state-mutliselect:hover {
+  background-color: #00a845 !important;
+  color: #fff !important;
+  text-decoration: none;
 }
 
 /* Pseudo-element to force button label text if HTML uses blank value */
