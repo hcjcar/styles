@@ -370,25 +370,28 @@ img:hover {
   background-color: #00a845;
 }
 
-/* Ensure dropdown and tile area stack vertically */
-#pmwebsearch_nextgencontrolsgroup {
+/* Parent container that holds dropdown + tiles */
+#pmwebsearch_nextgensresultsgroup {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 16px;
+  gap: 12px;
 }
 
-/* Align the tile group directly beneath the dropdown */
+/* Individual sections inside the container */
+#pmwebsearch_nextgencontrolsgroup,
 #pmwebsearch_nextgenresultsgroup {
-  clear: both;
-  margin-top: 0 !important;
+  width: 100%;
+  margin: 0;
+  float: none;
 }
 
-/* Optional: Remove any unintended float layout from tile containers */
+/* Make sure tiles flow naturally */
 .result-content {
   float: none !important;
   display: block;
 }
+
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
