@@ -276,110 +276,135 @@ form .group .group__inner .validation-message.error .validation-message__text {
   padding: 24px;
 }
 
-/* Individual tile styling */
-.result-content {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid #e8eef7;
+/* FORCE CLEAN TILE STRUCTURE - Override all existing styles */
+.result-content,
+.tile-container,
+.program-tile,
+*[class*="result"] {
+  background: #fff !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  border: 1px solid #e8eef7 !important;
+  margin: 0 !important;
+  position: relative !important;
 }
 
-.result-content:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Image at top of tile */
-.result-header {
+/* Clean image container - force to top */
+.result-header,
+.tile-image,
+*[class*="image"] {
   margin: 0 !important;
   padding: 0 !important;
-  position: relative;
+  width: 100% !important;
+  height: 200px !important;
+  overflow: hidden !important;
+  display: block !important;
+  order: 1 !important; /* Force to top */
 }
 
-.result-header__image-container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
+.result-header img,
+.tile-image img,
+*[class*="image"] img,
+img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
-.result-header__image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 0;
-  margin: 0 !important;
+/* Clean content area - force below image */
+.result-header__info,
+.tile-content,
+*[class*="info"],
+*[class*="content"]:not(.result-content) {
+  padding: 20px !important;
+  background-color: #fff !important;
+  text-align: left !important;
+  flex-grow: 1 !important;
+  order: 2 !important; /* Force to middle */
 }
 
-/* Content below image */
-.result-header__info {
-  padding: 20px;
-  background-color: #fff;
-  text-align: left;
-  flex-grow: 1;
-}
-
+/* Clean titles */
 .result-header__info h3,
-.result-header__info .program-name {
-  font-size: 1.25rem;
-  margin: 0 0 12px 0;
-  font-weight: 600;
-  color: #164d9c;
-  line-height: 1.3;
+.result-header__info .program-name,
+*[class*="title"],
+h3, h4, h5 {
+  font-size: 1.25rem !important;
+  margin: 0 0 12px 0 !important;
+  font-weight: 600 !important;
+  color: #164d9c !important;
+  line-height: 1.3 !important;
+  text-shadow: none !important;
 }
 
+/* Clean descriptions */
 .result-header__info p,
-.result-header__info .program-details {
-  margin: 8px 0;
-  font-size: 0.9rem;
-  color: #164d9c;
-  line-height: 1.4;
+.result-header__info .program-details,
+*[class*="description"],
+*[class*="details"] {
+  margin: 8px 0 !important;
+  font-size: 0.9rem !important;
+  color: #164d9c !important;
+  line-height: 1.4 !important;
   text-shadow: none !important;
   text-align: left !important;
 }
 
-/* Clean button styling */
-.result-content table {
-  width: 100%;
-  margin: 0;
-  padding: 0 20px 20px 20px;
-  border-collapse: collapse;
-  background-color: #fff;
+/* Force button container to bottom */
+.result-content table,
+.button-container,
+*[class*="button-container"],
+*[class*="cart"] {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 20px 20px 20px !important;
+  border-collapse: collapse !important;
+  background-color: #fff !important;
+  order: 3 !important; /* Force to bottom */
 }
 
-.result-content table td {
-  text-align: center;
-  vertical-align: middle;
-  padding: 0;
-}
-
-/* Proper "Add to Cart" button */
-a.cart-button--state-mutliselect {
+/* Proper "Add to Cart" button - More specific selectors */
+.cart-button--state-mutliselect,
+a.cart-button--state-mutliselect,
+input.cart-button--state-mutliselect,
+button.cart-button--state-mutliselect {
   background-color: #164d9c !important;
   color: white !important;
-  font-weight: 600;
-  font-size: 14px;
-  border-radius: 8px;
-  padding: 12px 24px;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  box-sizing: border-box;
-  transition: background-color 0.2s ease;
-  border: none;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  border-radius: 8px !important;
+  padding: 12px 24px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  transition: background-color 0.2s ease !important;
+  border: none !important;
+  height: auto !important;
+  min-height: 44px !important;
 }
 
-a.cart-button--state-mutliselect:hover {
+.cart-button--state-mutliselect::before,
+.cart-button--state-mutliselect::after {
+  content: "Add to Cart" !important;
+  display: block !important;
+}
+
+.cart-button--state-mutliselect:hover,
+a.cart-button--state-mutliselect:hover,
+input.cart-button--state-mutliselect:hover,
+button.cart-button--state-mutliselect:hover {
   background-color: #0f3a7a !important;
   color: #fff !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* Fix for checkbox styling in lists */
@@ -405,38 +430,62 @@ a.cart-button--state-mutliselect:hover {
   fill: #272c33;
 }
 
-/* Fix for empty button values */
-input[type="button"][value=" "]::after,
-input[type="submit"][value=" "]::after {
-  content: "Add to Cart";
+/* Fix for all button types and force "Add to Cart" text */
+input[type="button"],
+input[type="submit"],
+button,
+.button,
+input[value=""],
+input[value=" "],
+*[class*="cart"],
+*[class*="button"] {
+  background-color: #164d9c !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  border-radius: 8px !important;
+  padding: 12px 24px !important;
+  display: inline-block !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  border: none !important;
+  min-height: 44px !important;
+  cursor: pointer !important;
+}
+
+/* Force "Add to Cart" text for empty or space values */
+input[type="button"][value=""]::before,
+input[type="button"][value=" "]::before,
+input[type="submit"][value=""]::before,
+input[type="submit"][value=" "]::before,
+button:empty::before,
+.cart-button--state-mutliselect:empty::before {
+  content: "Add to Cart" !important;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  text-align: center;
-  padding: 12px 0;
-  background-color: #164d9c;
-  color: white;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 14px;
-  pointer-events: none;
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #164d9c !important;
+  color: white !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 
-input[type="button"][value=" "]:hover::after,
-input[type="submit"][value=" "]:hover::after {
-  background-color: #0f3a7a;
-}
-
+input[type="button"][value=""],
 input[type="button"][value=" "],
+input[type="submit"][value=""],
 input[type="submit"][value=" "] {
-  position: relative;
-  color: transparent;
-  background: transparent;
-  border: none;
-  width: 100%;
-  height: 44px;
-  cursor: pointer;
+  position: relative !important;
+  color: transparent !important;
+  background: transparent !important;
+  text-indent: -999px !important;
 }
 
 /* Remove any conflicting tile styles */
