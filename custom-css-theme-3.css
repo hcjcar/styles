@@ -129,8 +129,8 @@ form .group .group__inner .validation-message.error .validation-message__text {
 .checkbox-field-wrap .checkbox {
   background: #A1EAF0 !important;
   border: 1.5px solid #000000 !important;
-  width: 24px;
-  height: 24px;
+  width: 24px !important;
+  height: 24px !important;
   display: inline-block;
   box-sizing: border-box;
   transition: box-shadow 0.2s ease; /* smooth hover transition */
@@ -344,8 +344,8 @@ img:hover {
 
 /* Default (unselected) state */
 .cart-button--state-multiselect {
-  background-color: #E5F3FD; /* light blue */
-  color: #154c9e;            /* text in brand blue */
+  background-color: #E5F3FD !important; /* light blue */
+  color: #154c9e !important;            /* text in brand blue */
   border-radius: 20px;
   padding: 0.4rem 1.2rem;
   font-size: 1rem;
@@ -361,8 +361,8 @@ img:hover {
 .cart-button--state-multiselect.selected,
 .cart-button--state-multiselect.active,
 .cart-button--state-multiselect.ui-state-active {
-  background-color: #154c9e; /* dark blue */
-  color: #ffffff;            /* white text */
+  background-color: #154c9e !important; /* dark blue */
+  color: #ffffff !important;            /* white text */
 }
 
 /* Hover effect */
