@@ -331,7 +331,7 @@ img:hover {
 
 /* Shared button styles */
 .result-content .icon-button,
-.result-content .cart-button--state-mutliselect {
+.result-content .cart-button--state-multiselect {
   background: none;
   border: none;
   font-size: 1.2rem;
@@ -339,7 +339,7 @@ img:hover {
 }
 
 /* “Add to Cart” button styling */
-.cart-button--state-mutliselect {
+.cart-button--state-multiselect {
   background-color: #00c853;
   color: white;
   border-radius: 20px;
@@ -354,7 +354,7 @@ img:hover {
 }
 
 /* Hover effect */
-.cart-button--state-mutliselect:hover {
+.cart-button--state-multiselect:hover {
   background-color: #00a845;
 }
 
