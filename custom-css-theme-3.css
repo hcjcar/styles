@@ -173,7 +173,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
 .tile img,
 img {
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 img:hover {
