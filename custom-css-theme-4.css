@@ -406,7 +406,7 @@ input[type="submit"][value=" "] {
   font-family: "Segoe UI", sans-serif;
   display: flex;
   flex-direction: column;
-  height: 400px; /* <-- FIXED HEIGHT (adjust as needed) */
+  height: 450px; /* <-- FIXED HEIGHT (adjust as needed) */
   box-sizing: border-box;
 }
 
