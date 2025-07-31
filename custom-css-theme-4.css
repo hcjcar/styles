@@ -518,10 +518,11 @@ input[type="submit"][value=" "] {
 .tile-wrapper,
 .result-grid,
 .ui-grid.ui-widget {
-  display: flex !important;
-  flex-wrap: wrap !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 24px;
   justify-content: center;
-  gap: 20px;
+  padding: 20px;
 }
 
 .result-content,
