@@ -329,14 +329,15 @@ img:hover {
 }
 
 /* Container layout for 3-column tile grid */
-.result-content-container {
+.rect.group__inner {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center tiles in each row */
-  gap: 2rem;               /* Space between tiles */
-  padding: 2rem;
+  justify-content: center; /* center row */
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 /* Each tile */
