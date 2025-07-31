@@ -442,22 +442,23 @@ img {
 }
 
 /* === CUSTOM TILE GRID LAYOUT === */
-.tile-wrapper,
-.result-grid,
-.ui-grid.ui-widget {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
-  gap: 24px;
-  justify-content: center;
-  padding: 20px;
+/* Container layout for 3-column tile grid */
+.rect.group__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center row */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.result-content,
-.programResultTile,
-.ui-widget-content {
+.result-content {
   width: auto !important;
   max-width: 300px;
   flex: 0 0 auto;
+  gap: 2rem;
 }
 
 .cart-button--state-mutliselect {
