@@ -344,18 +344,19 @@ img:hover {
 
 /* Default (unselected) state */
 .cart-button--state-multiselect {
-  background-color: #E5F3FD !important; /* light blue */
-  color: #154c9e !important;            /* text in brand blue */
-  border-radius: 20px;
-  padding: 0.4rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 500;
+  width: 24px !important;
+  height: 24px !important;
+  background-color: #E5F3FD !important; /* Light blue */
+  border: 2px solid #000000 !important; /* Black border */
+  border-radius: 4px !important;        /* Slight rounding for a square look */
+  padding: 0 !important;
   display: inline-block;
-  min-width: 70px;
-  transition: background 0.3s ease;
+  text-indent: -9999px;                 /* Hides text */
   position: relative;
-  border: 2px solid #154c9e;
+  cursor: pointer;
+  box-shadow: none !important;
 }
+
 
 /* Selected/active state */
 .cart-button--state-multiselect.selected,
