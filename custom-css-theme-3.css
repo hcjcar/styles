@@ -370,6 +370,27 @@ img:hover {
   background-color: #00a845;
 }
 
+/* Ensure dropdown and tile area stack vertically */
+#pmwebsearch_nextgencontrolsgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+/* Align the tile group directly beneath the dropdown */
+#pmwebsearch_nextgenresultsgroup {
+  clear: both;
+  margin-top: 0 !important;
+}
+
+/* Optional: Remove any unintended float layout from tile containers */
+.result-content {
+  float: none !important;
+  display: block;
+}
+
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .tile-wrapper,
   .result-grid,
