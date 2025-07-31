@@ -320,8 +320,8 @@ img {
 /* Shared button styles */
 .result-content .icon-button,
 .result-content .cart-button--state-mutliselect {
-  background-color: #e6f2ff;  /* very light blue */
-  border: 2px solid #000000;  /* black border */
+  background-color: #E5F3FD !important;         /* light blue background */
+  border: 1.5px solid #000000 !important;       /* solid black border */
   font-size: 1.2rem;
   cursor: pointer;
   padding: 6px 12px;          /* optional: for better shape */
@@ -330,8 +330,8 @@ img {
 
 /* “Add to Cart” button styling */
 .cart-button--state-mutliselect {
-  background-color: #00c853;
-  color: white;
+  background-color: #E5F3FD !important; /* light blue */
+  color: #154c9e !important;            /* text in brand blue */
   border-radius: 20px;
   padding: 0.4rem 1.2rem;
   font-size: 1rem;
@@ -370,9 +370,9 @@ img {
 /* Selected state – when WebTrac adds 'notice' class */
 .cart-button.notice,
 .cart-button--selected {
-  background-color: #008080;        /* Teal background */
+  background-color: #008080 !important;        /* Teal background */
   color: #ffffff;                   /* White text */
-  border-color: #000000;            /* Keep border black */
+  border-color: #000000 !important;            /* Keep border black */
 }
 
 
