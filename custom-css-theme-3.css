@@ -146,7 +146,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 .checkbox.checkbox--state-checked > svg.checkbox__check > path {
-  fill: black;
+  fill: #000000 !important;
 }
 
 
