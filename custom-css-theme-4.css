@@ -129,8 +129,8 @@ form .group .group__inner .validation-message.error .validation-message__text {
 .checkbox-field-wrap .checkbox {
   background: #A1EAF0 !important;
   border: 1.5px solid #000000 !important;
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   display: inline-block;
   box-sizing: border-box;
   transition: box-shadow 0.2s ease; /* smooth hover transition */
