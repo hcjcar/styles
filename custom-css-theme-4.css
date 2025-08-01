@@ -478,44 +478,19 @@ img {
   text-indent: -9999px;
 }
 
-/* Parent container that holds dropdown + tiles */
-#pmwebsearch_nextgensresultsgroup {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-/* Individual sections inside the container */
-#pmwebsearch_nextgencontrolsgroup,
-#pmwebsearch_nextgenresultsgroup {
-  width: 100%;
-  margin: 0;
-  float: none;
-}
-
-/* Make sure tiles flow naturally */
-.result-content {
-  float: none !important;
-  display: block;
-}
-
-#pmwebsearch_nextgencontrolsgroup {
-  background: #d6f0ff;
-}
-#pmwebsearch_nextgenresultsgroup {
-  background: #fbe6ff;
-}
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .result-content-container {
     display: block !important;
-    padding: 1rem;
+    padding: 1rem !important;
+    gap: 0 !important; /* prevent spacing issue */
   }
 
   .result-content {
     width: 100% !important;
     max-width: 100% !important;
     flex: none !important;
-    margin-bottom: 1rem;
+    display: block !important;
+    margin-bottom: 1rem !important;
   }
+}
 }
