@@ -506,4 +506,16 @@ img {
 #pmwebsearch_nextgenresultsgroup {
   background: #fbe6ff;
 }
+  @media (max-width: 768px) {
+  .result-content-container {
+    display: block !important;
+    padding: 1rem;
+  }
+
+  .result-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+    margin-bottom: 1rem;
+  }
 }
