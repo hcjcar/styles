@@ -146,7 +146,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 .checkbox.checkbox--state-checked > svg.checkbox__check > path {
-  fill: white;
+  fill: black;
 }
 
 
@@ -360,7 +360,7 @@ img:hover {
 .cart-button--state-multiselect.active,
 .cart-button--state-multiselect.ui-state-active {
   background-color: #154c9e !important; /* dark blue */
-  color: #ffffff !important;            /* white text */
+  color: #000000 !important;            /* white text */
 }
 
 /* Hover effect */
