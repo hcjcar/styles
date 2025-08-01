@@ -479,7 +479,7 @@ img {
 }
 
 /* Mobile Media Query - Force Single Column Layout */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   /* Force container to single column */
   .rect.group__inner {
     display: block !important;
