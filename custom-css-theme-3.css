@@ -41,7 +41,7 @@ p {
   font-size: 20px !important;
   line-height: 32px !important;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
-  text-align: center;
+  text-align: left;
 }
 
 .link,
