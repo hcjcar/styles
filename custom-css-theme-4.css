@@ -325,66 +325,36 @@ img {
   position:relative;
 }
 
-/* Shared button styles */
-.result-content .icon-button,
-.result-content .cart-button--state-mutiselect {
-  background-color: #E5F3FD !important;         /* light blue background */
-  border: 1.5px solid #000000 !important;       /* solid black border */
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 6px 12px;          /* optional: for better shape */
-  border-radius: 6px;         /* optional: for rounded corners */
-}
-
-/* “Add to Cart” button styling */
-.cart-button--state-multiselect,
-.cart-button--state-mutliselect{
-  background-color: #E5F3FD !important; /* light blue */
-  color: #154c9e !important;            /* text in brand blue */
-  border-radius: 20px;
-  padding: 0.4rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  display: inline-block;
-  width: auto;
-  min-width: 70px;
-  transition: background 0.3s ease;
-  position: relative;
-}
-
-/* Hover effect */
-.cart-button--state-multiselect:hover,
-.cart-button--state-mutliselect:hover {
-  background-color: #00a845;
-}
-
+/* Base “Add to Cart” button styling */
 .cart-button {
   display: inline-block;
-  background-color: #ffffff;        /* Default: white background */
-  color: #008080;                   /* Teal text */
-  padding: 0.5rem 1rem;
+  background-color: #E5F3FD;         /* Light blue */
+  color: #154c9e;                    /* Brand blue text */
+  padding: 0.5rem 1.2rem;
   text-align: center;
   text-decoration: none;
-  border: 3px solid #000000;        /* Thick black border */
-  border-radius: 6px;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  min-width: 70px;
+  transition: background 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
 
-/* Hover effect for better UX */
+/* Hover state */
 .cart-button:hover {
-  background-color: #f0f0f0;
+  background-color: #00a845;
+  color: #ffffff;
 }
 
-/* Selected state – when WebTrac adds 'notice' class */
+/* Selected/“notice” state */
 .cart-button.notice,
-.cart-button--selected {
-  background-color: #008080 !important;        /* Teal background */
-  color: #ffffff;                   /* White text */
-  border-color: #000000 !important;            /* Keep border black */
+.cart-button.selected {
+  background-color: #008080 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
 }
-
 
 /* Container layout for 3-column tile grid */
 .result-content-container {
