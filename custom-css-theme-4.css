@@ -432,15 +432,18 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 .cart-button--state-multiselect,
 .cart-button--state-mutliselect {
-  width: 32px;
-  height: 32px;
-  background-color: #154c9e; /* deep blue */
-  border: 3px solid #154c9e;  /* match border to button */
+  width: auto !important;          /* Allow button to size for text */
+  height: auto !important;         /* Allow button to size for text */
+  padding: 0.5rem 1rem !important; /* Add padding for text */
+  background-color: #E5F3FD !important;
+  color: #154c9e !important;
+  border: 2px solid #000000 !important;
   border-radius: 6px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
+  display: inline-block;           /* Changed from block */
+  margin: 0.5rem auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  text-indent: -9999px;
+  text-indent: 0 !important;       /* REMOVE the text hiding */
+  font-size: 1rem;
+  font-weight: 500;
 }
 
