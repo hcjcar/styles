@@ -327,7 +327,7 @@ img {
 
 /* Shared button styles */
 .result-content .icon-button,
-.result-content .cart-button--state-multiselect {
+.result-content .cart-button--state-mutiselect {
   background-color: #E5F3FD !important;         /* light blue background */
   border: 1.5px solid #000000 !important;       /* solid black border */
   font-size: 1.2rem;
@@ -337,7 +337,8 @@ img {
 }
 
 /* “Add to Cart” button styling */
-.cart-button--state-multiselect {
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect{
   background-color: #E5F3FD !important; /* light blue */
   color: #154c9e !important;            /* text in brand blue */
   border-radius: 20px;
@@ -352,7 +353,8 @@ img {
 }
 
 /* Hover effect */
-.cart-button--state-multiselect:hover {
+.cart-button--state-multiselect:hover,
+.cart-button--state-mutliselect:hover {
   background-color: #00a845;
 }
 
@@ -473,7 +475,8 @@ img {
   gap: 2rem;
 }
 
-.cart-button--state-multiselect {
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect {
   width: 24px;
   height: 24px;
   background-color: #154c9e; /* deep blue */
@@ -530,7 +533,8 @@ img {
   }
 
   /* Button adjustments for mobile */
-  .cart-button--state-multiselect {
+  .cart-button--state-multiselect,
+  .cart-button--state-mutliselect{
     width: 32px !important;
     height: 32px !important;
     margin: 0.5rem auto !important;
