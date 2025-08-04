@@ -450,10 +450,28 @@ form .group .group__inner .validation-message.error .validation-message__text {
   font-weight: 500;
 }
 
-/* Hover effect for selected buttons */
+/* Selected state - darker teal when selected */
+.cart-button--state-multiselect.notice,
+.cart-button--state-multiselect.selected,
+.cart-button--state-mutliselect.notice,
+.cart-button--state-mutliselect.selected {
+  background-color: #006666 !important;  /* Darker teal when selected */
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+/* Hover effect for NON-selected buttons - light teal */
+.cart-button--state-multiselect:hover,
+.cart-button--state-mutliselect:hover {
+  background-color: #A1EAF0 !important;  /* Light teal on hover */
+  color: #154c9e !important;
+}
+
+/* Hover effect for selected buttons - keep darker teal or make slightly lighter */
 .cart-button--state-multiselect.notice:hover,
 .cart-button--state-multiselect.selected:hover,
 .cart-button--state-mutliselect.notice:hover,
 .cart-button--state-mutliselect.selected:hover {
-  background-color: #006666 !important;  /* Darker teal on hover when selected */
+  background-color: #008080 !important;  /* Slightly lighter teal when hovering over selected */
+  color: #ffffff !important;
 }
