@@ -325,7 +325,7 @@ img {
   display: inline-block;
   background-color: #E5F3FD;         /* Light blue */
   color: #154c9e;                    /* Brand blue text */
-  padding: 0.5rem 1.2rem;
+  padding: 0;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
@@ -338,8 +338,8 @@ img {
 }
 
 /* Hover state */
-.cart-button:hover {
-  background-color: #00a845 !important;
+.cart-button:hover { 
+  background-color: #c8f7fa !important;
   color: #ffffff;
 }
 
