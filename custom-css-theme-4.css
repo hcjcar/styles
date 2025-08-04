@@ -397,7 +397,7 @@ img {
 
 /* Each tile */
 .result-content {
-  background: #fff;
+  background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
