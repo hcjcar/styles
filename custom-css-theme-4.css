@@ -344,7 +344,7 @@ img {
 
 /* Hover state */
 .cart-button:hover {
-  background-color: #00a845;
+  background-color: #00a845 !important;
   color: #ffffff;
 }
 
