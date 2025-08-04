@@ -447,3 +447,10 @@ form .group .group__inner .validation-message.error .validation-message__text {
   font-weight: 500;
 }
 
+/* Hover effect for selected buttons */
+.cart-button--state-multiselect.notice:hover,
+.cart-button--state-multiselect.selected:hover,
+.cart-button--state-mutliselect.notice:hover,
+.cart-button--state-mutliselect.selected:hover {
+  background-color: #006666 !important;  /* Darker teal on hover when selected */
+}
