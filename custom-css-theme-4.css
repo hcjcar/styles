@@ -297,6 +297,13 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
+
+.label {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .tile {
   width: 320px !important;       /* Adjust width */
   height: 220px !important;      /* Adjust height */
