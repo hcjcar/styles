@@ -294,63 +294,144 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
 
-/* === FIXED GRID LAYOUT === */
-
-/* Force label to be on its own line above the grid */
-.label {
+/* Force the Display Option label to be completely separate from the grid */
+.label[for="display"],
+#display_vm_2_label {
   display: block !important;
   width: 100% !important;
-  margin-bottom: 1rem !important;
+  margin: 1rem 0 2rem 0 !important;
+  padding: 0 !important;
   clear: both !important;
   float: none !important;
+  position: static !important;
+  z-index: 1 !important;
 }
 
-/* Main container for the grid */
+/* Ensure the dropdown doesn't interfere */
+.label[for="display"] + * {
+  clear: both !important;
+  margin-bottom: 2rem !important;
+}
+
+/* Main grid container - complete reset */
 .rect.group__inner {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: flex-start !important; /* Changed from 'right' to 'flex-start' */
-  align-items: flex-start !important;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
   gap: 2rem !important;
   max-width: 1200px !important;
-  margin: 0 auto !important;
+  margin: 2rem auto !important;
   padding: 2rem !important;
   box-sizing: border-box !important;
-  clear: both !important; /* Ensure it starts on a new line */
+  clear: both !important;
+  width: 100% !important;
+  justify-items: center !important;
 }
 
-/* Individual tiles/result content */
+/* Individual tile containers */
 .result-content,
 .programResultTile,
 .ui-widget-content {
-  width: auto !important;
-  max-width: 300px !important;
-  min-width: 280px !important;
-  flex: 0 0 auto !important;
-  margin: 0 !important; /* Remove any conflicting margins */
-  float: none !important; /* Remove any float properties */
+  width: 320px !important;
+  max-width: 320px !important;
+  min-width: 320px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
   display: block !important;
+  position: relative !important;
+  box-sizing: border-box !important;
 }
 
-/* Ensure tiles don't have conflicting positioning */
+/* Tile styling - ensure consistent sizing */
 .tile {
-  width: 100% !important; /* Fill the container */
-  max-width: 300px !important;
-  height: 220px !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 400px !important;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-size: cover;
   background-position: center;
-  position: relative !important; /* Ensure proper positioning */
+  background-color: #ffffff;
+  display: flex !important;
+  flex-direction: column !important;
 }
 
-/* Mobile responsiveness - Stack tiles vertically */
+/* Ensure content inside tiles flows properly */
+.result-header {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.result-header__image-container {
+  flex-shrink: 0 !important;
+  height: 200px !important;
+  overflow: hidden;
+}
+
+.result-header__info {
+  flex: 1 !important;
+  padding: 1rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+/* Button area at bottom */
+.result-content table {
+  margin-top: auto !important;
+  flex-shrink: 0 !important;
+}
+
+/* Medium screens - 2 columns */
+@media (max-width: 1024px) {
+  .rect.group__inner {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+    padding: 1.5rem !important;
+  }
+  
+  .result-content,
+  .programResultTile,
+  .ui-widget-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 280px !important;
+  }
+}
+
+/* Tablet screens - still 2 columns but smaller */
 @media (max-width: 768px) {
   .rect.group__inner {
-    display: block !important; /* Remove flex layout */
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
     padding: 1rem !important;
+    margin: 1rem auto !important;
+  }
+  
+  .result-content,
+  .programResultTile,
+  .ui-widget-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 250px !important;
+  }
+  
+  .tile {
+    min-height: 350px !important;
+  }
+}
+
+/* Mobile screens - single column */
+@media (max-width: 480px) {
+  .rect.group__inner {
+    display: block !important;
+    grid-template-columns: none !important;
+    padding: 1rem !important;
+    margin: 1rem auto !important;
     gap: 0 !important;
   }
   
@@ -360,166 +441,25 @@ form .group .group__inner .validation-message.error .validation-message__text {
     width: 100% !important;
     max-width: 100% !important;
     min-width: auto !important;
-    margin-bottom: 1rem !important;
-    display: block !important;
-    float: none !important;
+    margin-bottom: 1.5rem !important;
   }
   
   .tile {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    min-height: 200px !important;
-  }
-}
-
-/* Extra small mobile devices */
-@media (max-width: 480px) {
-  .rect.group__inner {
-    display: block !important;
-    padding: 1rem !important;
+    min-height: 300px !important;
+    margin-bottom: 1.5rem !important;
   }
   
-  .result-content,
-  .programResultTile,
-  .ui-widget-content,
-  .tile {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-bottom: 1rem !important;
-    display: block !important;
+  /* Make mobile more spacious */
+  .result-header__info {
+    padding: 1.5rem !important;
   }
   
-  /* Force single column layout */
-  * {
-    max-width: 100% !important;
+  .cart-button--state-multiselect,
+  .cart-button--state-mutliselect {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1.1rem !important;
+    margin: 1rem auto !important;
   }
-  
-  /* Override any grid or flex layouts */
-  .rect.group__inner * {
-    flex: none !important;
-    float: none !important;
-    position: static !important;
-  }
-}
-
-/* Base “Add to Cart” button styling */
-.cart-button {
-  display: inline-block;
-  background-color: #E5F3FD !important;         /* Light blue */
-  color: #154c9e;                    /* Brand blue text */
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  border: 2px solid #000000 !important;
-  border-radius: 20px;
-  transition: background 0.3s ease, color 0.3s ease;
-  cursor: pointer;
-}
-
-/* Hover state */
-.cart-button:hover { 
-  background-color: #c8f7fa !important;
-  color: #000000;
-}
-
-/* Selected/“notice” state */
-.cart-button.notice,
-.cart-button.selected {
-  background-color: #008080 !important;
-  color: #ffffff !important;
-  border-color: #000000 !important;
-}
-
-/* Container layout for 3-column tile grid */
-.result-content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-/* Each tile */
-.result-content {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  flex: 1 1 calc(33.333% - 1rem);
-  max-width: calc(33.333% - 1rem);
-  font-family: "Segoe UI", sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 500px; /* <-- FIXED HEIGHT (adjust as needed) */
-  box-sizing: border-box;
-}
-
-/* Top section (image area) */
-.result-header {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-
-/* Text section */
-.result-header__info {
-  padding: 1rem;
-  background-color: #fff;
-  text-align: left;
-}
-
-.result-header__info h3,
-.result-header__info .program-name {
-  font-size: 1.2rem;
-  margin: 0 0 0.5rem;
-  font-weight: 600;
-  color: #222;
-}
-
-.result-header__info p,
-.result-header__info .program-details {
-  margin: 0.3rem 0;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Table at bottom of tile */
-.result-content table {
-  width: 100%;
-  padding: 0.5rem 1rem 1rem;
-  border-collapse: collapse;
-  background-color: #fff;
-}
-
-.result-content table td {
-  text-align: center;
-  vertical-align: middle;
-  padding: 0.5rem;
-}
-
-/* === CUSTOM TILE GRID LAYOUT === */
-/* Container layout for 3-column tile grid */
-.rect.group__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right; /* center row */
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-.result-content {
-.programResultTile,
-.ui-widget-content {
-  width: auto !important;
-  max-width: 300px;
-  flex: 0 0 auto;
-  gap: 2rem;
 }
 
 .cart-button--state-multiselect,
