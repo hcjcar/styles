@@ -36,13 +36,12 @@ h2.header {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
-p {
-  color: #ffffff !important;
-  font-size: 20px !important;
-  line-height: 32px !important;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
-  text-align: center !important;
-  font-weight: bold !important;
+.result-header__description {
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  text-align: justified;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .button,
