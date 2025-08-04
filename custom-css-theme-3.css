@@ -36,12 +36,12 @@ h2.header {
   text-align: left;
 }
 
-p {
-  color: #164d9c !important;
-  font-size: 20px !important;
-  line-height: 32px !important;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
-  text-align: left;
+.result-header__description {
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  text-align: justified;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .link,
