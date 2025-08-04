@@ -59,7 +59,8 @@ p {
 }
 
 .ui-button {
-  border-radius: 1px !important;
+  background: #ccdee0;
+  border-radius: 1.5px !important;
   font-size: 16px !important;
   height: 32px !important;
   width: 32px !important;
