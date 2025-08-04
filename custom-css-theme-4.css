@@ -294,10 +294,13 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
 
+/* Force label to be on its own line above the grid */
 .label {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+  clear: both !important;
+  float: none !important;
 }
 
 .tile {
