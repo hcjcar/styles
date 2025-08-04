@@ -487,6 +487,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
     margin: 0 0 1rem 0 !important;
   }
 
+
   /* Button adjustments for mobile */
   .cart-button--state-multiselect,
   .cart-button--state-mutliselect{
