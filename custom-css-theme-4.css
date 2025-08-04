@@ -339,7 +339,7 @@ img {
 /* Hover state */
 .cart-button:hover { 
   background-color: #c8f7fa !important;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* Selected/“notice” state */
