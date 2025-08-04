@@ -318,7 +318,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 /* Base “Add to Cart” button styling */
 .cart-button {
   display: inline-block;
-  background-color: #E5F3FD;         /* Light blue */
+  background-color: #E5F3FD !important;         /* Light blue */
   color: #154c9e;                    /* Brand blue text */
   padding: 0;
   text-align: center;
