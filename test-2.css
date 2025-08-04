@@ -1,1 +1,548 @@
+/*
+THE JONES CENTER – COOL BLUE THEME
+*/
 
+#content {
+  max-width: 100% !important;
+}
+
+#content .inner {
+  display: block;
+}
+
+#app {
+  background: none !important;
+}
+
+#vsi-footer {
+  background-color: #4cd9e6;color:black;
+}
+
+h1.page-header,
+h1.header,
+h1 {
+  color: #164d9c !important;
+  font-size: 32px !important;
+  line-height: 40px !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
+  text-align: left;
+}
+
+h2.header {
+  color: #164d9c !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
+  text-align: left;
+}
+
+.link,
+.link:hover {
+  color: #164d9c !important;
+  text-decoration: underline !important;
+}
+
+.button, {
+  border-radius: 8px;
+  font-size: 16px;
+  height: 42px !important;
+  line-height: 42px !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ui-button {
+  background: #ccdee0 !important;
+  border-radius:2px !important;
+  border: 2px solid;
+  font-size: 16px !important;
+  height: 40px !important;
+  width: 40px !important;
+  line-height: 40px !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.group,
+.group.collapse,
+.group .button:disabled {
+  background: transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  border-radius: 12px !important;
+}
+
+.message,
+.infobox {
+  padding: 15px 44px !important;
+  background: #cde3f9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cg fill='%23164d9c'%3E%3Cpath d='M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z'/%3E%3Cpath d='M7 7h2v5H7z'/%3E%3Ccircle cx='8' cy='5' r='1'/%3E%3C/g%3E%3C/svg%3E") no-repeat !important;
+  background-position: 15px 18px !important;
+  color: #164d9c !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+form .group .header.group__header {
+  background: #164d9c;
+  color: #ffffff !important;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 52px;
+  border-radius: 12px 12px 0 0;
+  }
+
+form .group .group__inner label.label * {
+  font-size: 14px;
+  line-height: 18px;
+  color: #164d9c !important;
+}
+
+form .group .group__inner input.fillin.validation-field {
+  border: 2px solid #1a4fbf;
+}
+
+form .group .group__inner .validation-message.error .validation-message__text {
+  color: #cc0000 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.combobox {
+  background: transparent !important;
+  border: 1px solid #164d9c !important;
+  color: #164d9c !important;
+}
+
+.table th,
+.table tr:nth-child(2n) td {
+  background: rgba(22, 77, 156, 0.1) !important;
+  color: #164d9c !important;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+}
+
+.checkbox-field-wrap .checkbox {
+  background: #A1EAF0 !important;
+  border: 1.5px solid #000000 !important;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease; /* smooth hover transition */
+}
+
+.checkbox-field-wrap .checkbox:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.checkbox.checkbox--state-checked {
+  background: #33c5ce !important;
+}
+
+.checkbox.checkbox--state-checked > svg.checkbox__check > path {
+  fill: white;
+}
+
+
+/* Optional: remove label if it slipped in */
+.top-banner {
+  display: none !important;
+}
+
+/* Tile styling */
+.tile {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.result-header__image-container {
+  aspect-ratio: 4 / 3; /* or 16 / 9, 1 / 1, etc. */
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.result-header__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
+
+.search-criteria {
+  background-color: #e9f3fc;
+  border: 1px solid #c2d8ef;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  font-family: 'Segoe UI', sans-serif;
+  color: #164d9c;
+}
+
+.filter-collapsible {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #164d9c;
+}
+
+.label span:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  color: #164d9c;
+  margin-right: 10px;
+}
+
+.combobox-label-count {
+  font-size: 13px;
+  color: #4b75b7;
+}
+
+.combobox__list ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  border: 1px solid #b2cbea;
+  border-radius: 8px;
+  background-color: #ffffff;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.listitem {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e0ecf7;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  color: #164d9c;
+}
+
+.listitem:hover {
+  background-color: #e0edff;
+}
+
+.listitem--state-selected {
+  background-color: #266dd3;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.listitem--state-selected .listitem__text {
+  color: #ffffff;
+}
+
+.listitem__icon svg {
+  fill: #ffffff;
+  margin-right: 10px;
+}
+
+.combobox__controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.combobox__control {
+  font-size: 13px;
+  color: #266dd3;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.combobox__control:hover {
+  color: #0a3c8d;
+}
+
+.combobox__control,
+.listitem {
+  transition: all 0.2s ease-in-out;
+}
+
+/* ─── SEARCH RESULT CONTAINER – ROUNDED CORNERS ───────────────────────────── */
+
+.result-content.tablecollapsecontainer {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dbe8f8;
+}
+
+/* ─── LAYOUT FIXES: Prevent "Search Results" header from sitting on box ─── */
+
+.result-header {
+  margin-bottom: 20px !important;
+  border-radius: 12px 12px 0 0 !important;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+
+.result-content.tablecollapsecontainer {
+  margin-top: 20px !important;
+}
+
+/* ─── TILE CUSTOMIZATION ───────────────────────────── */
+
+/* === FIXED GRID LAYOUT === */
+
+/* Force label to be on its own line above the grid */
+.label {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+  clear: both !important;
+  float: none !important;
+}
+
+/* Main container for the grid */
+.rect.group__inner {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important; /* Changed from 'right' to 'flex-start' */
+  align-items: flex-start !important;
+  gap: 2rem !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 2rem !important;
+  box-sizing: border-box !important;
+  clear: both !important; /* Ensure it starts on a new line */
+}
+
+/* Individual tiles/result content */
+.result-content,
+.programResultTile,
+.ui-widget-content {
+  width: auto !important;
+  max-width: 300px !important;
+  min-width: 280px !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important; /* Remove any conflicting margins */
+  float: none !important; /* Remove any float properties */
+  display: block !important;
+}
+
+/* Ensure tiles don't have conflicting positioning */
+.tile {
+  width: 100% !important; /* Fill the container */
+  max-width: 300px !important;
+  height: 220px !important;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: cover;
+  background-position: center;
+  position: relative !important; /* Ensure proper positioning */
+}
+
+/* Mobile responsiveness - Stack tiles vertically */
+@media (max-width: 768px) {
+  .rect.group__inner {
+    display: block !important; /* Remove flex layout */
+    padding: 1rem !important;
+    gap: 0 !important;
+  }
+  
+  .result-content,
+  .programResultTile,
+  .ui-widget-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: auto !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+    float: none !important;
+  }
+  
+  .tile {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 200px !important;
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .rect.group__inner {
+    display: block !important;
+    padding: 1rem !important;
+  }
+  
+  .result-content,
+  .programResultTile,
+  .ui-widget-content,
+  .tile {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem !important;
+    display: block !important;
+  }
+  
+  /* Force single column layout */
+  * {
+    max-width: 100% !important;
+  }
+  
+  /* Override any grid or flex layouts */
+  .rect.group__inner * {
+    flex: none !important;
+    float: none !important;
+    position: static !important;
+  }
+}
+
+/* Base “Add to Cart” button styling */
+.cart-button {
+  display: inline-block;
+  background-color: #E5F3FD !important;         /* Light blue */
+  color: #154c9e;                    /* Brand blue text */
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #000000 !important;
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover state */
+.cart-button:hover { 
+  background-color: #c8f7fa !important;
+  color: #000000;
+}
+
+/* Selected/“notice” state */
+.cart-button.notice,
+.cart-button.selected {
+  background-color: #008080 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+/* Container layout for 3-column tile grid */
+.result-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Each tile */
+.result-content {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* <-- FIXED HEIGHT (adjust as needed) */
+  box-sizing: border-box;
+}
+
+/* Top section (image area) */
+.result-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Text section */
+.result-header__info {
+  padding: 1rem;
+  background-color: #fff;
+  text-align: left;
+}
+
+.result-header__info h3,
+.result-header__info .program-name {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.result-header__info p,
+.result-header__info .program-details {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Table at bottom of tile */
+.result-content table {
+  width: 100%;
+  padding: 0.5rem 1rem 1rem;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.result-content table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem;
+}
+
+/* === CUSTOM TILE GRID LAYOUT === */
+/* Container layout for 3-column tile grid */
+.rect.group__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right; /* center row */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.result-content {
+.programResultTile,
+.ui-widget-content {
+  width: auto !important;
+  max-width: 300px;
+  flex: 0 0 auto;
+  gap: 2rem;
+}
+
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect {
+  width: auto !important;          /* Allow button to size for text */
+  height: auto !important;         /* Allow button to size for text */
+  padding: 0.5rem 1rem !important; /* Add padding for text */
+  background-color: #E5F3FD !important;
+  color: #154c9e !important;
+  border: 2px solid #000000 !important;
+  border-radius: 6px;
+  display: inline-block;           /* Changed from block */
+  margin: 0.5rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-indent: 0 !important;       /* REMOVE the text hiding */
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hover effect for selected buttons */
+.cart-button--state-multiselect.notice:hover,
+.cart-button--state-multiselect.selected:hover,
+.cart-button--state-mutliselect.notice:hover,
+.cart-button--state-mutliselect.selected:hover {
+  background-color: #006666 !important;  /* Darker teal on hover when selected */
+}
