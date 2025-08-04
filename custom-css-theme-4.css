@@ -436,10 +436,10 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 .cart-button--state-multiselect,
 .cart-button--state-mutliselect {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background-color: #154c9e; /* deep blue */
-  border: 2px solid #154c9e;  /* match border to button */
+  border: 3px solid #154c9e;  /* match border to button */
   border-radius: 6px;
   display: block;
   margin: 0 auto;
