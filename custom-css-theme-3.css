@@ -175,10 +175,6 @@ img {
   border-radius: 16px;
 }
 
-img:hover {
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
 /* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
 
 .search-criteria {
