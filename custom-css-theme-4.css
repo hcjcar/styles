@@ -310,16 +310,6 @@ img {
   background-position: center;
 }
 
-.group group__controls group--state-container {
-  background-color: #164d9c !important;
-  boarder-radius: 0px !important;
-}
-
-
-.svg-icon .svg-fill {
-  position:relative;
-}
-
 /* Base “Add to Cart” button styling */
 .cart-button {
   display: inline-block;
