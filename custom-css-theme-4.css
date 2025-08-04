@@ -33,6 +33,7 @@ h2.header {
   font-size: 24px !important;
   line-height: 30px !important;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
+  text-align: left;
 }
 
 p {
