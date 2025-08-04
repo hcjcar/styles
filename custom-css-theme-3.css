@@ -185,7 +185,6 @@ img {
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
-  font-family: 'Segoe UI', sans-serif;
   color: #164d9c;
 }
 
@@ -226,11 +225,11 @@ img {
   transition: background 0.2s ease;
   display: flex;
   align-items: center;
-  color: #164d9c;
+  color: #ffffff;
 }
 
 .listitem:hover {
-  background-color: #e0edff;
+  background-color: #164d9c;
 }
 
 .listitem--state-selected {
