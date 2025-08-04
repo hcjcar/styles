@@ -45,12 +45,6 @@ p {
   font-weight: bold !important;
 }
 
-.link,
-.link:hover {
-  color: #164d9c !important;
-  text-decoration: underline !important;
-}
-
 .button,
 .ui-button {
   border-radius: 8px !important;
@@ -58,24 +52,6 @@ p {
   height: 42px !important;
   line-height: 42px !important;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
-}
-
-input[type='text'],
-input[type='password'],
-input[type='tel'],
-input[type='text']:focus,
-input[type='password']:focus,
-input[type='tel']:focus,
-.datepicker-button {
-  border: 1px solid #164d9c;
-  border-radius: 4px;
-  background: transparent;
-  color: #164d9c;
-  font-size: 16px;
-  height: 42px;
-  line-height: 40px;
-  width: 100%;
-  max-width: 348px;
 }
 
 .group,
@@ -99,7 +75,7 @@ input[type='tel']:focus,
 
 form .group .header.group__header {
   background: #164d9c;
-  color: #fff !important;
+  color: #ffffff !important;
   height: 52px;
   font-size: 16px;
   font-weight: 600;
@@ -140,19 +116,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
   color: #164d9c !important;
 }
 
-.checkbox-field-wrap .checkbox {
-  background: #e9f3fc !important;
-  border: 1px solid #164d9c !important;
-}
-
-.checkbox.checkbox--state-checked {
-  background: #164d9c !important;
-}
-
-.checkbox.checkbox--state-checked > svg.checkbox__check > path {
-  fill: white;
-}
-
 /* Optional: remove label if it slipped in */
 .top-banner {
   display: none !important;
@@ -184,27 +147,9 @@ form .group .group__inner .validation-message.error .validation-message__text {
   transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
-
-.multiselectlist {
-background: #dbf7fa;
-}
  
 .button {
 height:auto !important;
-}
-
-.button.cart-button--state-mutliselect,
-.cart-button--state-mutliselect,
-.result-content .table td a.cart-button--state-mutliselect,
-a.cart-button--state-mutliselect {
-  width: 60px;
-  height: 60px;
-  padding: 0;
-  border-radius: 8px; /* optional, reduces roundness */
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #content {
