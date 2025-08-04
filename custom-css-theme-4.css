@@ -112,10 +112,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
   color: #164d9c !important;
 }
 
-.combobox svg path {
-  fill: #164d9c;
-}
-
 .table th,
 .table tr:nth-child(2n) td {
   background: rgba(22, 77, 156, 0.1) !important;
