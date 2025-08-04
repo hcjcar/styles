@@ -47,16 +47,6 @@ p {
 .link,
 .link:hover {
   color: #164d9c !important;
-  text-decoration: underline !important;
-}
-
-.button,
-.ui-button {
-  border-radius: 8px !important;
-  font-size: 16px !important;
-  height: 42px !important;
-  line-height: 42px !important;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
 .group,
@@ -254,9 +244,8 @@ img {
 }
 
 .combobox__control {
-  font-size: 13px;
+  font-size: 13px;f
   color: #266dd3;
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -327,7 +316,7 @@ img {
 
 /* Shared button styles */
 .result-content .icon-button,
-.result-content .cart-button--state-mutliselect {
+.result-content .cart-button--state-multiselect {
   background-color: #E5F3FD !important;         /* light blue background */
   border: 1.5px solid #000000 !important;       /* solid black border */
   font-size: 1.2rem;
@@ -337,7 +326,7 @@ img {
 }
 
 /* “Add to Cart” button styling */
-.cart-button--state-mutliselect {
+.cart-button--state-multiselect {
   background-color: #E5F3FD !important; /* light blue */
   color: #154c9e !important;            /* text in brand blue */
   border-radius: 20px;
