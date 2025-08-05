@@ -1,3 +1,7 @@
+Pasted content
+9.98 KB •448 lines
+•
+Formatting may be inconsistent from source
 /*
 THE JONES CENTER – COOL BLUE THEME
 */
@@ -294,82 +298,157 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
 
-/* === TARGETED LAYOUT FIXES === */
-
-/* Fix the search sidebar alignment */
-#content .inner {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 1rem !important;
-}
-
-/* Ensure sidebar stays in its container */
-.sidebar,
-.search-sidebar {
-  flex-shrink: 0 !important;
-  width: auto !important;
-  max-width: 300px !important;
-}
-
-/* Main content area */
-.main-content {
-  flex: 1 !important;
-  min-width: 0 !important;
-}
-
-/* Force Display Option label to break properly and not interfere with grid */
-/* === COMPLETE LAYOUT FIX === */
-
-/* === FIXED GRID LAYOUT === */
-
-/* Force label to be on its own line above the grid */
 .label {
-  display: block !important;
-  width: 100% !important;
-  margin-bottom: 1rem !important;
-  clear: both !important;
-  float: none !important;
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-/* Main container for the grid */
-.rect.group__inner {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: flex-start !important; /* Changed from 'right' to 'flex-start' */
-  align-items: flex-start !important;
-  gap: 2rem !important;
-  max-width: 1200px !important;
-  margin: 0 auto !important;
-  padding: 2rem !important;
-  box-sizing: border-box !important;
-  clear: both !important; /* Ensure it starts on a new line */
-}
-
-/* Individual tiles/result content */
-.result-content,
-.programResultTile,
-.ui-widget-content {
-  width: auto !important;
-  max-width: 300px !important;
-  min-width: 280px !important;
-  flex: 0 0 auto !important;
-  margin: 0 !important; /* Remove any conflicting margins */
-  float: none !important; /* Remove any float properties */
-  display: block !important;
-}
-
-/* Ensure tiles don't have conflicting positioning */
 .tile {
-  width: 100% !important; /* Fill the container */
-  max-width: 300px !important;
-  height: 220px !important;
+  width: 320px !important;       /* Adjust width */
+  height: 220px !important;      /* Adjust height */
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-size: cover;
   background-position: center;
-  position: relative !important; /* Ensure proper positioning */
+}
+
+/* Base “Add to Cart” button styling */
+.cart-button {
+  display: inline-block;
+  background-color: #E5F3FD !important;         /* Light blue */
+  color: #154c9e;                    /* Brand blue text */
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #000000 !important;
+  border-radius: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover state */
+.cart-button:hover { 
+  background-color: #c8f7fa !important;
+  color: #000000;
+}
+
+/* Selected/“notice” state */
+.cart-button.notice,
+.cart-button.selected {
+  background-color: #008080 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+/* Container layout for 3-column tile grid */
+.result-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Each tile */
+.result-content {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* <-- FIXED HEIGHT (adjust as needed) */
+  box-sizing: border-box;
+}
+
+/* Top section (image area) */
+.result-header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Text section */
+.result-header__info {
+  padding: 1rem;
+  background-color: #fff;
+  text-align: left;
+}
+
+.result-header__info h3,
+.result-header__info .program-name {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.result-header__info p,
+.result-header__info .program-details {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Table at bottom of tile */
+.result-content table {
+  width: 100%;
+  padding: 0.5rem 1rem 1rem;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.result-content table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem;
+}
+
+/* === CUSTOM TILE GRID LAYOUT === */
+/* Container layout for 3-column tile grid */
+.rect.group__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right; /* center row */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.result-content {
+.programResultTile,
+.ui-widget-content {
+  width: auto !important;
+  max-width: 300px;
+  flex: 0 0 auto;
+  gap: 2rem;
+}
+
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect {
+  width: auto !important;          /* Allow button to size for text */
+  height: auto !important;         /* Allow button to size for text */
+  padding: 0.5rem 1rem !important; /* Add padding for text */
+  background-color: #E5F3FD !important;
+  color: #154c9e !important;
+  border: 2px solid #000000 !important;
+  border-radius: 6px;
+  display: inline-block;           /* Changed from block */
+  margin: 0.5rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-indent: 0 !important;       /* REMOVE the text hiding */
+  font-size: 1rem;
+  font-weight: 500;
 }
 /* Medium screens - 2 columns */
 @media (max-width: 1024px) {
