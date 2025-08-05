@@ -336,19 +336,21 @@ img {
 }
 
 /* “Add to Cart” button styling */
-.cart-button--state-multiselect {
-  background-color: #E5F3FD !important; /* light blue */
-  color: #154c9e !important;            /* text in brand blue */
-  border-radius: 20px;
-  padding: 0.4rem 1.2rem;
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect {
+  width: auto !important;          /* Allow button to size for text */
+  height: auto !important;         /* Allow button to size for text */
+  padding: 0.5rem 1rem !important; /* Add padding for text */
+  background-color: #E5F3FD !important;
+  color: #154c9e !important;
+  border: 2px solid #000000 !important;
+  border-radius: 6px;
+  display: inline-block;           /* Changed from block */
+  margin: 0.5rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-indent: 0 !important;       /* REMOVE the text hiding */
   font-size: 1rem;
   font-weight: 500;
-  display: inline-block;
-  width: auto;
-  min-width: 70px;
-  transition: background 0.3s ease;
-  position: relative;
-}
 
 /* Selected/active state */
 .cart-button--state-multiselect.selected,
