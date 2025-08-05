@@ -294,84 +294,140 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
 
-/* Force the Display Option label to be completely separate from the grid */
+/* === TARGETED LAYOUT FIXES === */
+
+/* Fix the search sidebar alignment */
+#content .inner {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 1rem !important;
+}
+
+/* Ensure sidebar stays in its container */
+.sidebar,
+.search-sidebar {
+  flex-shrink: 0 !important;
+  width: auto !important;
+  max-width: 300px !important;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Force Display Option label to break properly and not interfere with grid */
 .label[for="display"],
 #display_vm_2_label {
   display: block !important;
   width: 100% !important;
-  margin: 1rem 0 2rem 0 !important;
+  margin: 0 0 1rem 0 !important;
   padding: 0 !important;
   clear: both !important;
   float: none !important;
   position: static !important;
-  z-index: 1 !important;
+  background: none !important;
+  border: none !important;
 }
 
-/* Ensure the dropdown doesn't interfere */
-.label[for="display"] + * {
-  clear: both !important;
-  margin-bottom: 2rem !important;
-}
-
-/* Main grid container - complete reset */
-.rect.group__inner {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
-  gap: 2rem !important;
-  max-width: 1200px !important;
-  margin: 2rem auto !important;
-  padding: 2rem !important;
+/* Fix dropdown/combobox issues */
+.combobox,
+select,
+.ui-selectmenu-button {
+  background: #ffffff !important;
+  border: 2px solid #164d9c !important;
+  color: #164d9c !important;
+  padding: 0.5rem !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  min-height: 32px !important;
   box-sizing: border-box !important;
+}
+
+.combobox:hover,
+select:hover,
+.ui-selectmenu-button:hover {
+  background: #f0f8ff !important;
+  border-color: #0a3c8d !important;
+}
+
+/* Ensure dropdown arrow works */
+.combobox svg path,
+.ui-selectmenu-icon {
+  fill: #164d9c !important;
+  color: #164d9c !important;
+}
+
+/* Grid container - simpler approach */
+.rect.group__inner {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  gap: 1.5rem !important;
+  padding: 1rem !important;
+  margin: 1rem 0 !important;
   clear: both !important;
   width: 100% !important;
-  justify-items: center !important;
+  box-sizing: border-box !important;
 }
 
-/* Individual tile containers */
+/* Individual tiles - consistent sizing */
 .result-content,
 .programResultTile,
 .ui-widget-content {
   width: 320px !important;
   max-width: 320px !important;
-  min-width: 320px !important;
-  height: auto !important;
+  flex: 0 0 320px !important;
+  background: #ffffff !important;
+  border-radius: 16px !important; /* Soft rounded edges */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
   margin: 0 !important;
-  padding: 0 !important;
-  float: none !important;
-  display: block !important;
-  position: relative !important;
-  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+  min-height: 450px !important;
 }
 
-/* Tile styling - ensure consistent sizing */
+/* Restore soft rounded edges to tiles */
 .tile {
-  width: 100% !important;
-  height: auto !important;
-  min-height: 400px !important;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-size: cover;
-  background-position: center;
-  background-color: #ffffff;
+  background: #ffffff !important;
+  width: 100% !important;
+  height: 100% !important;
   display: flex !important;
   flex-direction: column !important;
 }
 
-/* Ensure content inside tiles flows properly */
-.result-header {
-  flex: 1 !important;
-  display: flex !important;
-  flex-direction: column !important;
+.tile:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
 }
 
+/* Fix image sizing in headers */
 .result-header__image-container {
+  width: 100% !important;
+  height: 180px !important;
+  overflow: hidden !important;
+  border-radius: 16px 16px 0 0 !important; /* Only top corners rounded */
   flex-shrink: 0 !important;
-  height: 200px !important;
-  overflow: hidden;
 }
 
+.result-header__image-container img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 0 !important; /* Remove individual image rounding */
+}
+
+/* Content area inside tiles */
 .result-header__info {
   flex: 1 !important;
   padding: 1rem !important;
@@ -380,17 +436,53 @@ form .group .group__inner .validation-message.error .validation-message__text {
   justify-content: space-between !important;
 }
 
-/* Button area at bottom */
+/* Table/button area at bottom */
 .result-content table {
   margin-top: auto !important;
   flex-shrink: 0 !important;
+  padding: 0.5rem 1rem 1rem !important;
 }
 
-/* Medium screens - 2 columns */
-@media (max-width: 1024px) {
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
   .rect.group__inner {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1.5rem !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack sidebar above content on tablets */
+  #content .inner {
+    flex-direction: column !important;
+  }
+  
+  .sidebar,
+  .search-sidebar {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .rect.group__inner {
+    justify-content: center !important;
+    gap: 1rem !important;
+  }
+  
+  .result-content,
+  .programResultTile,
+  .ui-widget-content {
+    width: 300px !important;
+    max-width: 300px !important;
+    flex: 0 0 300px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile - single column, more spacing */
+  .rect.group__inner {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
     padding: 1.5rem !important;
   }
   
@@ -398,62 +490,32 @@ form .group .group__inner .validation-message.error .validation-message__text {
   .programResultTile,
   .ui-widget-content {
     width: 100% !important;
-    max-width: 100% !important;
-    min-width: 280px !important;
-  }
-}
-
-/* Tablet screens - still 2 columns but smaller */
-@media (max-width: 768px) {
-  .rect.group__inner {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 1rem !important;
-    padding: 1rem !important;
-    margin: 1rem auto !important;
+    max-width: 350px !important;
+    flex: none !important;
+    min-height: 400px !important;
   }
   
-  .result-content,
-  .programResultTile,
-  .ui-widget-content {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 250px !important;
-  }
-  
-  .tile {
-    min-height: 350px !important;
-  }
-}
-
-/* Mobile screens - single column */
-@media (max-width: 480px) {
-  .rect.group__inner {
-    display: block !important;
-    grid-template-columns: none !important;
-    padding: 1rem !important;
-    margin: 1rem auto !important;
-    gap: 0 !important;
-  }
-  
-  .result-content,
-  .programResultTile,
-  .ui-widget-content {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: auto !important;
-    margin-bottom: 1.5rem !important;
-  }
-  
-  .tile {
-    min-height: 300px !important;
-    margin-bottom: 1.5rem !important;
-  }
-  
-  /* Make mobile more spacious */
   .result-header__info {
     padding: 1.5rem !important;
   }
   
+  .cart-button--state-multiselect,
+  .cart-button--state-mutliselect {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1.1rem !important;
+    margin: 1rem auto !important;
+    min-height: 44px !important; /* Better touch target */
+  }
+  
+  /* More space for dropdown */
+  .combobox,
+  select,
+  .ui-selectmenu-button {
+    min-height: 44px !important;
+    padding: 0.75rem !important;
+    font-size: 16px !important; /* Prevents zoom on iOS */
+  }
+}
   .cart-button--state-multiselect,
   .cart-button--state-mutliselect {
     padding: 0.75rem 1.5rem !important;
