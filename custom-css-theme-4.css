@@ -174,7 +174,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-.tile img {
+.img {
   border-radius: 0 !important; /* Remove rounded corners */
   width: 100% !important;
   height: 250px !important; /* Larger height */
