@@ -36,28 +36,33 @@ h2.header {
   text-align: left;
 }
 
+.result-header__description {
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  text-align: justified;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 .link,
 .link:hover {
   color: #164d9c !important;
-  text-decoration: underline !important;
 }
 
-.button, {
-  border-radius: 8px;
-  font-size: 16px;
+.button {
+  border-radius: 8px !important;
+  font-size: 16px !important;
   height: 42px !important;
   line-height: 42px !important;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
 .ui-button {
-  background: #ccdee0 !important;
-  border-radius:2px !important;
-  border: 2px solid;
+  border-radius: 4px !important;
   font-size: 16px !important;
-  height: 40px !important;
-  width: 40px !important;
-  line-height: 40px !important;
+  height: 32px !important;
+  width: 32px;
+  line-height: 32px !important;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -112,23 +117,21 @@ form .group .group__inner .validation-message.error .validation-message__text {
   color: #164d9c !important;
 }
 
+.combobox svg path {
+  fill: #164d9c;
+}
+
 .table th,
 .table tr:nth-child(2n) td {
   background: rgba(22, 77, 156, 0.1) !important;
   color: #164d9c !important;
 }
 
-.checkbox {
-  display: flex;
-  align-items: center;   /* vertical centering */
-  justify-content: center; /* horizontal centering */
-}
-
 .checkbox-field-wrap .checkbox {
-  background: #A1EAF0 !important;
+  background: #A1EAF0;
   border: 1.5px solid #000000 !important;
-  width: 16px;
-  height: 16px;
+  width: 24px !important;
+  height: 24px !important;
   display: inline-block;
   box-sizing: border-box;
   transition: box-shadow 0.2s ease; /* smooth hover transition */
@@ -144,7 +147,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 .checkbox.checkbox--state-checked > svg.checkbox__check > path {
-  fill: white;
+  fill: #000000 !important;
 }
 
 
@@ -158,22 +161,19 @@ form .group .group__inner .validation-message.error .validation-message__text {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   background-size: cover;
   background-position: center;
 }
 
-.result-header__image-container {
-  aspect-ratio: 4 / 3; /* or 16 / 9, 1 / 1, etc. */
-  overflow: hidden;
-  border-radius: 16px;
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-.result-header__image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 0;
+.tile img,
+img {
+  border-radius: 16px;
 }
 
 /* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
@@ -185,7 +185,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
-  font-family: 'Segoe UI', sans-serif;
   color: #164d9c;
 }
 
@@ -226,11 +225,11 @@ form .group .group__inner .validation-message.error .validation-message__text {
   transition: background 0.2s ease;
   display: flex;
   align-items: center;
-  color: #164d9c;
+  color: #ffffff;
 }
 
 .listitem:hover {
-  background-color: #e0edff;
+  background-color: #164d9c;
 }
 
 .listitem--state-selected {
@@ -255,9 +254,8 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 .combobox__control {
-  font-size: 13px;
+  font-size: 13px;f
   color: #266dd3;
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -293,13 +291,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
-
-.label {
-  display: block;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
 .tile {
   width: 320px !important;       /* Adjust width */
   height: 220px !important;      /* Adjust height */
@@ -311,190 +302,62 @@ form .group .group__inner .validation-message.error .validation-message__text {
   background-position: center;
 }
 
-/* Base “Add to Cart” button styling */
-.cart-button {
-  display: inline-block;
-  background-color: #E5F3FD !important;         /* Light blue */
-  color: #154c9e;                    /* Brand blue text */
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  font-size: .75rem;
-  font-weight: 500;
-  border: 1.5px solid #000000 !important;
-  border-radius: 20px;
-  transition: background 0.3s ease, color 0.3s ease;
-  cursor: pointer;
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover state */
-.cart-button:hover { 
-  background-color: #c8f7fa !important;
-  color: #000000;
-}
-
-/* Selected/“notice” state */
-.cart-button.notice,
-.cart-button.selected {
-  background-color: #008080 !important;
-  color: #ffffff !important;
-  border-color: #000000 !important;
-}
-
-/* Container layout for 3-column tile grid */
-.result-content-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-/* Each tile */
-.result-content {
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  flex: 1 1 calc(33.333% - 1rem);
-  max-width: calc(33.333% - 1rem);
-  font-family: "Segoe UI", sans-serif;
-  display: flex;
-  flex-direction: column;
-  height: 500px; /* <-- FIXED HEIGHT (adjust as needed) */
-  box-sizing: border-box;
-}
-
-/* Top section (image area) */
-.result-header {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-
-/* Text section */
-.result-header__info {
-  padding: 1rem;
-  background-color: #fff;
-  text-align: left;
-}
-
-.result-header__info h3,
-.result-header__info .program-name {
-  font-size: 1.2rem;
-  margin: 0 0 0.5rem;
-  font-weight: 600;
-  color: #222;
-}
-
-.result-header__info p,
-.result-header__info .program-details {
-  margin: 0.3rem 0;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Table at bottom of tile */
-.result-content table {
-  width: 100%;
-  padding: 0.5rem 1rem 1rem;
-  border-collapse: collapse;
-  background-color: #fff;
-}
-
-.result-content table td {
-  text-align: center;
-  vertical-align: middle;
-  padding: 0.5rem;
-}
-
-/* === CUSTOM TILE GRID LAYOUT === */
-/* Container layout for 3-column tile grid */
-.rect.group__inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right; /* center row */
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-.result-content {
-.programResultTile,
-.ui-widget-content {
-  width: auto !important;
-  max-width: 300px;
-  flex: 0 0 auto;
-  gap: 2rem;
-}
-
-.cart-button--state-multiselect,
-.cart-button--state-mutliselect {
-  width: auto !important;          /* Allow button to size for text */
-  height: auto !important;         /* Allow button to size for text */
-  padding: 0.5rem 1rem !important; /* Add padding for text */
-  background-color: #E5F3FD !important;
-  color: #154c9e !important;
-  border: 2px solid #000000 !important;
-  border-radius: 6px;
-  display: inline-block;           /* Changed from block */
-  margin: 0.5rem auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  text-indent: 0 !important;       /* REMOVE the text hiding */
-  font-size: .75rem;
-  font-weight: 500;
-}
-
-  .cart-button--state-multiselect,
-  .cart-button--state-mutliselect {
-    padding: 0.75rem 1.5rem !important;
-    font-size: .75rem !important;
-    margin: 1rem auto !important;
-  }
-
-.cart-button--state-multiselect,
-.cart-button--state-mutliselect {
-  width: auto !important;          /* Allow button to size for text */
-  height: auto !important;         /* Allow button to size for text */
-  padding: 0.5rem 1rem !important; /* Add padding for text */
-  background-color: #E5F3FD !important;
-  color: #154c9e !important;
-  border: 2px solid #000000 !important;
-  border-radius: 6px;
-  display: inline-block;           /* Changed from block */
-  margin: 0.5rem auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  text-indent: 0 !important;       /* REMOVE the text hiding */
-  font-size: .75rem;
-  font-weight: 500;
-}
-
-/* Hover effect for selected buttons */
-.cart-button--state-multiselect.notice:hover,
-.cart-button--state-multiselect.selected:hover,
-.cart-button--state-mutliselect.notice:hover,
-.cart-button--state-mutliselect.selected:hover {
-  background-color: #006666 !important;  /* Darker teal on hover when selected */
-}
-
-.result-content-container {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)) !important;
-  gap: 1rem !important;
-  padding: 1rem !important;
-}
-
-/* Ensure grid items behave */
-.result-content-container > * {
-  min-width: 0 !important;
+.tile img {
   width: 100% !important;
-  box-sizing: border-box !important;
+  height: 100% !important;
+  object-fit: cover;            /* ensures full coverage without stretching */
+  border-radius: 16px;
 }
 
-/* Mobile override - simpler approach */
-@media (max-width: 768px) {
-  .result-content-container {
-    grid-template-columns: 1fr !important;
-  }
+.group group__controls group--state-container {
+  background-color: #164d9c !important;
+  boarder-radius: 0px !important;
+}
+
+/* More specific targeting */
+#pmwebsearch_nextgencontrolsgroup {
+  background-color: #ffffff !important;
+  padding: 15px !important;
+  border-radius: 8px !important;
+}
+
+/* “Add to Cart” button styling */
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect {
+  width: auto !important;          /* Allow button to size for text */
+  height: auto !important;         /* Allow button to size for text */
+  padding: 0.5rem 1rem !important; /* Add padding for text */
+  background-color: #E5F3FD !important;
+  color: #154c9e !important;
+  border: 1.5px solid #000000 !important;
+  border-radius: 6px;
+  display: inline-block;           /* Changed from block */
+  margin: 0.5rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-indent: 0 !important;       /* REMOVE the text hiding */
+  font-size: .6rem !important;
+  font-weight: 500;
+  line-height: 1.2 !important; /* Add line-height for better control */
+  min-height: 32px !important; /* Set minimum height */
+  max-height: 40px !important; /* Set maximum height */
+}
+
+/* Selected/active state */
+.cart-button--state-multiselect.selected,
+.cart-button--state-multiselect.active,
+.cart-button--state-multiselect.ui-state-active {
+  background-color: #154c9e !important; /* dark blue */
+  color: #000000 !important;            /* white text */
+}
+
+/* Hover effect */
+.cart-button--state-multiselect:hover {
+  background-color: #c8f7fa !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
