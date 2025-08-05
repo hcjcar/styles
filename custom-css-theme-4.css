@@ -227,7 +227,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
   transition: background 0.2s ease;
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #164d9c;
 }
 
 .listitem:hover {
