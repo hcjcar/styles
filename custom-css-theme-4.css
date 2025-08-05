@@ -322,7 +322,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 /* “Add to Cart” button styling */
 .cart-button--state-multiselect,
 .cart-button--state-mutliselect {
-  width: 40px !important;          /* Allow button to size for text */
+  width: 60px !important;          /* Allow button to size for text */
   height: auto !important;         /* Allow button to size for text */
   padding: 0.3rem 0.3rem !important; /* Add padding for text */
   background-color: #E5F3FD !important;
