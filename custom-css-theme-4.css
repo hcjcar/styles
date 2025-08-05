@@ -36,6 +36,14 @@ h2.header {
   text-align: left;
 }
 
+.result-header__info {
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  text-align: justified;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 .result-header__description {
   font-size: 16px;
   line-height: 28px;
