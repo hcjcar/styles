@@ -329,7 +329,7 @@ img {
 .result-content .cart-button--state-multiselect {
   background-color: #E5F3FD !important;         /* light blue background */
   border: 1.5px solid #000000 !important;       /* solid black border */
-  font-size: 1.2rem;
+  font-size: .75rem;
   cursor: pointer;
   padding: 6px 12px;          /* optional: for better shape */
   border-radius: 6px;         /* optional: for rounded corners */
