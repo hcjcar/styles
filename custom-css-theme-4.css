@@ -294,13 +294,10 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
 
-/* Force label to be on its own line above the grid */
 .label {
-  display: block !important;
-  width: 100% !important;
-  margin-bottom: 1rem !important;
-  clear: both !important;
-  float: none !important;
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .tile {
@@ -322,9 +319,9 @@ form .group .group__inner .validation-message.error .validation-message__text {
   padding: 0;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .75rem;
   font-weight: 500;
-  border: 2px solid #000000 !important;
+  border: 1.5px solid #000000 !important;
   border-radius: 20px;
   transition: background 0.3s ease, color 0.3s ease;
   cursor: pointer;
@@ -346,9 +343,8 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* Container layout for 3-column tile grid */
 .result-content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 1rem;
 }
@@ -446,32 +442,59 @@ form .group .group__inner .validation-message.error .validation-message__text {
   margin: 0.5rem auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   text-indent: 0 !important;       /* REMOVE the text hiding */
-  font-size: 1rem;
+  font-size: .75rem;
   font-weight: 500;
 }
 
-/* Selected state - darker teal when selected */
-.cart-button--state-multiselect.notice,
-.cart-button--state-multiselect.selected,
-.cart-button--state-mutliselect.notice,
-.cart-button--state-mutliselect.selected {
-  background-color: #006666 !important;  /* Darker teal when selected */
-  color: #ffffff !important;
-  border-color: #000000 !important;
-}
+  .cart-button--state-multiselect,
+  .cart-button--state-mutliselect {
+    padding: 0.75rem 1.5rem !important;
+    font-size: .75rem !important;
+    margin: 1rem auto !important;
+  }
 
-/* Hover effect for NON-selected buttons - light teal */
-.cart-button--state-multiselect:hover,
-.cart-button--state-mutliselect:hover {
-  background-color: #A1EAF0 !important;  /* Light teal on hover */
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect {
+  width: auto !important;          /* Allow button to size for text */
+  height: auto !important;         /* Allow button to size for text */
+  padding: 0.5rem 1rem !important; /* Add padding for text */
+  background-color: #E5F3FD !important;
   color: #154c9e !important;
+  border: 2px solid #000000 !important;
+  border-radius: 6px;
+  display: inline-block;           /* Changed from block */
+  margin: 0.5rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-indent: 0 !important;       /* REMOVE the text hiding */
+  font-size: .75rem;
+  font-weight: 500;
 }
 
-/* Hover effect for selected buttons - keep darker teal or make slightly lighter */
+/* Hover effect for selected buttons */
 .cart-button--state-multiselect.notice:hover,
 .cart-button--state-multiselect.selected:hover,
 .cart-button--state-mutliselect.notice:hover,
 .cart-button--state-mutliselect.selected:hover {
-  background-color: #008080 !important;  /* Slightly lighter teal when hovering over selected */
-  color: #ffffff !important;
+  background-color: #006666 !important;  /* Darker teal on hover when selected */
+}
+
+.result-content-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)) !important;
+  gap: 1rem !important;
+  padding: 1rem !important;
+}
+
+/* Ensure grid items behave */
+.result-content-container > * {
+  min-width: 0 !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Mobile override - simpler approach */
+@media (max-width: 768px) {
+  .result-content-container {
+    grid-template-columns: 1fr !important;
+  }
 }
