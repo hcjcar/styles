@@ -347,9 +347,8 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* Container layout for 3-column tile grid */
 .result-content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   padding: 1rem;
 }
