@@ -352,6 +352,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
   grid-template-columns: repeat(4, 1fr); /* Changed from auto-fit to 4 columns */
   gap: 1rem;
   padding: 1rem;
+  align-items: start; /* Align items to top of row */
 }
 
 .result-content {
@@ -437,7 +438,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
   padding: 0.5rem 1rem !important; /* Add padding for text */
   background-color: #E5F3FD !important;
   color: #154c9e !important;
-  border: 2px solid #000000 !important;
+  border: 1.5px solid #000000 !important;
   border-radius: 6px;
   display: inline-block;           /* Changed from block */
   margin: 0.5rem auto;
@@ -454,23 +455,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
   margin: 1rem auto !important;
 }
 
-.cart-button--state-multiselect,
-.cart-button--state-mutliselect {
-  width: auto !important;          /* Allow button to size for text */
-  height: auto !important;         /* Allow button to size for text */
-  padding: 0.5rem 1rem !important; /* Add padding for text */
-  background-color: #E5F3FD !important;
-  color: #154c9e !important;
-  border: 2px solid #000000 !important;
-  border-radius: 6px;
-  display: inline-block;           /* Changed from block */
-  margin: 0.5rem auto;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  text-indent: 0 !important;       /* REMOVE the text hiding */
-  font-size: .75rem;
-  font-weight: 500;
-}
-
 /* Hover effect for selected buttons */
 .cart-button--state-multiselect.notice:hover,
 .cart-button--state-multiselect.selected:hover,
@@ -481,9 +465,10 @@ form .group .group__inner .validation-message.error .validation-message__text {
 
 /* Ensure grid items behave */
 .result-content-container > * {
-  min-width: 0 !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Changed from auto-fit to 4 columns */
+  gap: 1rem;
+  padding: 1rem;
 }
 
 /* Mobile responsive - stack to 2 columns on tablets, 1 column on mobile */
