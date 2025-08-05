@@ -225,6 +225,10 @@ form .group .group__inner .validation-message.error .validation-message__text {
   color: #164d9c;
 }
 
+.listitem_text {
+  color: #164d9c;
+}
+
 .listitem:hover {
   background-color: #164d9c;
 }
