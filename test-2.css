@@ -319,9 +319,9 @@ form .group .group__inner .validation-message.error .validation-message__text {
   padding: 0;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .75rem;
   font-weight: 500;
-  border: 2px solid #000000 !important;
+  border: 1.5px solid #000000 !important;
   border-radius: 20px;
   transition: background 0.3s ease, color 0.3s ease;
   cursor: pointer;
