@@ -327,7 +327,7 @@ img {
 /* “Add to Cart” button styling */
 .cart-button--state-multiselect,
 .cart-button--state-mutliselect {
-  width: auto !important;          /* Allow button to size for text */
+  width: 60 !important;          /* Allow button to size for text */
   height: auto !important;         /* Allow button to size for text */
   padding: 0.5rem 1rem !important; /* Add padding for text */
   background-color: #E5F3FD !important;
