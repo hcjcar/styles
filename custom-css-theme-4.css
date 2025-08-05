@@ -46,6 +46,12 @@ h2.header {
   background-color: #fff;
 }
 
+  /* Add these for debugging */
+  border: 2px solid red !important; /* See the actual boundaries */
+  min-height: 200px !important; /* Give it height to center within */
+  width: 100% !important; /* Ensure it takes full width */
+}
+
 .result-header__description {
   font-size: 16px;
   line-height: 28px;
