@@ -347,6 +347,15 @@ form .group .group__inner .validation-message.error .validation-message__text {
   line-height: 1.2 !important; /* Add line-height for better control */
   min-height: 32px !important; /* Set minimum height */
   max-height: 40px !important; /* Set maximum height */
+  text-indent: 0 !important;
+  overflow: visible !important;
+}
+
+* Make sure icon shows */
+.cart-button--state-multiselect svg,
+.cart-button--state-multiselect .icon {
+  display: inline-block !important;
+  margin-right: 5px !important;
 }
 
 /* Selected/active state */
