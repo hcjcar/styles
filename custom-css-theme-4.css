@@ -37,11 +37,13 @@ h2.header {
 }
 
 .result-header__info {
-  font-size: 16px;
-  line-height: 28px;
-  color: #000000;
-  text-align: justified;
-  font-family: 'Segoe UI', sans-serif;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important; /* Center vertically */
+  align-items: center !important; /* Center horizontally */
+  text-align: center !important;
+  padding: 1rem;
+  background-color: #fff;
 }
 
 .result-header__description {
