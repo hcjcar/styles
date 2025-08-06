@@ -18,6 +18,13 @@ body {
   background: #fff0e8 !important;
 }
 
+@media (min-width: 769px) {
+    #content * {
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+  
 #vsi-footer {
   background-color: #4cd9e6;color:black;
 }
