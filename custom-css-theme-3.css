@@ -29,7 +29,7 @@ body {
 
 .combobox__dropdown .listitem--state-selected,
 .combobox__dropdown .listitem--state-selected .listitem__text {
-  color: #164d9c !important;
+  color: #ffffff !important;
   background-color: rgba(22, 77, 156, 0.1) !important;
 }
 
