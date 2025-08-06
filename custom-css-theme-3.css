@@ -112,7 +112,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 .combobox {
-  background: transparent !important;
+  background: #e9f3fc !important;
   border: 1px solid #164d9c !important;
   color: #164d9c !important;
 }
@@ -189,7 +189,7 @@ img {
 }
 
 .filter-collapsible {
-  background: none;
+  background: #e9f3fce;
   border: none;
   cursor: pointer;
   color: #164d9c;
