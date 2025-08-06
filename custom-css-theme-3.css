@@ -22,6 +22,17 @@ body {
   background-color: #4cd9e6;color:black;
 }
 
+.combobox__dropdown .listitem,
+.combobox__dropdown .listitem__text {
+  color: #164d9c !important;
+}
+
+.combobox__dropdown .listitem--state-selected,
+.combobox__dropdown .listitem--state-selected .listitem__text {
+  color: #164d9c !important;
+  background-color: rgba(22, 77, 156, 0.1) !important;
+}
+
 h1.page-header,
 h1.header,
 h1 {
