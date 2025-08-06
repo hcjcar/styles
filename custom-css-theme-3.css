@@ -10,8 +10,12 @@ THE JONES CENTER – COOL BLUE THEME
   display: block;
 }
 
+body {
+  background: #fff0e8 !important;
+}
+
 #app {
-  background: #ffd8c4 !important;
+  background: #fff0e8 !important;
 }
 
 #vsi-footer {
