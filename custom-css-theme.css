@@ -11,7 +11,7 @@ THE JONES CENTER – COOL BLUE THEME
 }
 
 #app {
-  background: #fff0e8 !important;
+  background: ##E5F3FD !important;
 }
 
 #vsi-footer {
@@ -148,5 +148,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
         font-size: 8px;
         min-height: auto;
       }
+
 
 
