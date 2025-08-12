@@ -243,10 +243,6 @@ img {
   color: #ffffff;
 }
 
-.listitem:hover {
-  background-color: #164d9c;
-}
-
 .listitem--state-selected {
   background-color: #266dd3;
   color: #ffffff;
