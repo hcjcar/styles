@@ -334,10 +334,6 @@ img {
   width: 300px;
   height: 150px;
 }
-  
-.svg-icon .svg-fill {
-  position:relative;
-}
 
 /* “Add to Cart” button styling */
 .cart-button--state-multiselect,
