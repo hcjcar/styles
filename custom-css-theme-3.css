@@ -322,7 +322,7 @@ img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover;            /* ensures full coverage without stretching */
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .group group__controls group--state-container {
@@ -330,7 +330,11 @@ img {
   boarder-radius: 0px !important;
 }
 
-
+.result-content .result-header__image-container {
+  width: 300px;
+  height: 150px;
+}
+  
 .svg-icon .svg-fill {
   position:relative;
 }
