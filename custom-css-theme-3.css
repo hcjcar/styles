@@ -341,7 +341,6 @@ img {
   width: auto !important;          /* Allow button to size for text */
   height: auto !important;         /* Allow button to size for text */
   padding: 0.5rem !important; /* Add padding for text */
-  background-color: #E5F3FD !important;
   color: #154c9e !important;
   border: 1.5px solid #000000 !important;
   border-radius: 6px;
