@@ -51,6 +51,14 @@ h2.header {
   text-align: left;
 }
 
+p {
+  color: #164d9c !important;
+  font-size: 20px !important;
+  line-height: 26px !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
+  text-align: left;
+}
+
 .result-header__description {
   font-size: 16px;
   line-height: 28px;
@@ -67,7 +75,7 @@ h2.header {
 .button {
   border-radius: 8px !important;
   font-size: 12px !important;
-  height: 388px !important;
+  height: 38px !important;
   line-height: 38px !important;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
