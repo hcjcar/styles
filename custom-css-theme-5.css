@@ -18,13 +18,6 @@ body {
   background: #E5F3FD !important;
 }
 
-@media (min-width: 769px) {
-    #content * {
-        box-sizing: border-box;
-        text-align: center;
-    }
-}
-  
 #vsi-footer {
   background-color: #07098b;color:white;
 }
@@ -36,7 +29,7 @@ body {
 
 .combobox__dropdown .listitem--state-selected,
 .combobox__dropdown .listitem--state-selected .listitem__text {
-  color: #164d9c !important;
+  color: #ffffff !important;
   background-color: rgba(22, 77, 156, 0.1) !important;
 }
 
@@ -46,15 +39,15 @@ h1 {
   color: #164d9c !important;
   font-size: 32px !important;
   line-height: 40px !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
-  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4) !important;
+  text-align: left;
 }
 
-h2 {
+h2.header {
   color: #164d9c !important;
-  font-size: 32px !important;
-  line-height: 40px !important;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
   text-align: left;
 }
 
@@ -66,12 +59,25 @@ h2 {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.button,
-.ui-button {
+.link,
+.link:hover {
+  color: #164d9c !important;
+}
+
+.button {
   border-radius: 8px !important;
   font-size: 16px !important;
   height: 42px !important;
   line-height: 42px !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ui-button {
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  height: 32px !important;
+  width: 32px;
+  line-height: 32px !important;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -102,8 +108,7 @@ form .group .header.group__header {
   font-weight: 600;
   line-height: 52px;
   border-radius: 12px 12px 0 0;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-}
+  }
 
 form .group .group__inner label.label * {
   font-size: 14px;
@@ -122,7 +127,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
 }
 
 .combobox {
-  background: transparent !important;
+  background: #e9f3fc !important;
   border: 1px solid #164d9c !important;
   color: #164d9c !important;
 }
@@ -137,12 +142,36 @@ form .group .group__inner .validation-message.error .validation-message__text {
   color: #164d9c !important;
 }
 
+.checkbox-field-wrap .checkbox {
+  background: #A1EAF0;
+  border: 1.5px solid #000000 !important;
+  width: 24px !important;
+  height: 24px !important;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease; /* smooth hover transition */
+}
+
+.checkbox-field-wrap .checkbox:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.checkbox.checkbox--state-checked {
+  background: #33c5ce !important;
+}
+
+.checkbox.checkbox--state-checked > svg.checkbox__check > path {
+  fill: #000000 !important;
+}
+
+
 /* Optional: remove label if it slipped in */
 .top-banner {
   display: none !important;
 }
 
-/* Tile styling for background-image blocks */
+/* Tile styling */
 .tile {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -157,24 +186,186 @@ form .group .group__inner .validation-message.error .validation-message__text {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Tile image tag fallback (if used elsewhere) */
-.tile img {
+.tile img,
+img {
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.tile img:hover {
+/* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
+
+.search-criteria {
+  background-color: #e9f3fc;
+  border: 1px solid #c2d8ef;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+  color: #164d9c;
+}
+
+.filter-collapsible {
+  background: #e9f3fce;
+  border: none;
+  cursor: pointer;
+  color: #164d9c;
+}
+
+.label span:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  color: #164d9c;
+  margin-right: 10px;
+}
+
+.combobox-label-count {
+  font-size: 13px;
+  color: #4b75b7;
+}
+
+.combobox__list ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  border: 1px solid #b2cbea;
+  border-radius: 8px;
+  background-color: #ffffff;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.listitem {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e0ecf7;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.listitem--state-selected {
+  background-color: #266dd3;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.listitem--state-selected .listitem__text {
+  color: #ffffff;
+}
+
+.listitem__icon svg {
+  fill: #ffffff;
+  margin-right: 10px;
+}
+
+.combobox__controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.combobox__control {
+  font-size: 13px;f
+  color: #266dd3;
+  cursor: pointer;
+}
+
+.combobox__control:hover {
+  color: #0a3c8d;
+}
+
+.combobox__control,
+.listitem {
+  transition: all 0.2s ease-in-out;
+}
+
+/* ─── SEARCH RESULT CONTAINER – ROUNDED CORNERS ───────────────────────────── */
+
+.result-content.tablecollapsecontainer {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dbe8f8;
+}
+
+/* ─── LAYOUT FIXES: Prevent "Search Results" header from sitting on box ─── */
+
+.result-header {
+  margin-bottom: 20px !important;
+  border-radius: 12px 12px 0 0 !important;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+
+.result-content.tablecollapsecontainer {
+  margin-top: 20px !important;
+}
+
+/* ─── TILE CUSTOMIZATION ───────────────────────────── */
+.tile {
+  width: 320px !important;       /* Adjust width */
+  height: 220px !important;      /* Adjust height */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
- 
-.button {
-height:auto !important;
+
+.tile img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;            /* ensures full coverage without stretching */
+  border-radius: 8px;
 }
 
-#content {
-padding:0px !important;
+.group group__controls group--state-container {
+  background-color: #164d9c !important;
+  boarder-radius: 0px !important;
 }
-      }
-      }
+
+.result-content .result-header__image-container {
+  width: 300px;
+  height: 150px;
+}
+
+/* “Add to Cart” button styling */
+.cart-button--state-multiselect,
+.cart-button--state-mutliselect {
+  width: 120px !important;          /* Allow button to size for text */
+  height: auto !important;         /* Allow button to size for text */
+  padding: 0.5rem !important; /* Add padding for text */
+  color: #154c9e !important;
+  border: 1.5px solid #000000 !important;
+  border-radius: 6px;
+  display: inline-block;           /* Changed from block */
+  margin: 0.5rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  text-indent: 0 !important;       /* REMOVE the text hiding */
+  font-size: .6rem !important;
+  font-weight: 500;
+  line-height: 1.2 !important; /* Add line-height for better control */
+  min-height: 32px !important; /* Set minimum height */
+  max-height: 40px !important; /* Set maximum height */
+}
+
+/* Selected/active state */
+.cart-button--state-multiselect.selected,
+.cart-button--state-multiselect.active,
+.cart-button--state-multiselect.ui-state-active {
+  background-color: #154c9e !important; /* dark blue */
+  color: #000000 !important;            /* white text */
+}
+
+/* Hover effect */
+.cart-button--state-multiselect:hover {
+  background-color: #c8f7fa !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
