@@ -1,0 +1,180 @@
+/*
+THE JONES CENTER – COOL BLUE THEME
+*/
+
+#content {
+  max-width: 100% !important;
+}
+
+#content .inner {
+  display: block;
+}
+
+body {
+  background: #E5F3FD !important;
+}
+
+#app {
+  background: #E5F3FD !important;
+}
+
+@media (min-width: 769px) {
+    #content * {
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+  
+#vsi-footer {
+  background-color: #07098b;color:white;
+}
+
+.combobox__dropdown .listitem,
+.combobox__dropdown .listitem__text {
+  color: #164d9c !important;
+}
+
+.combobox__dropdown .listitem--state-selected,
+.combobox__dropdown .listitem--state-selected .listitem__text {
+  color: #164d9c !important;
+  background-color: rgba(22, 77, 156, 0.1) !important;
+}
+
+h1.page-header,
+h1.header,
+h1,
+h2.header {
+  color: #164d9c !important;
+  font-size: 28px !important;
+  line-height: 36px !important;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) !important;
+  text-align: center;
+}
+
+h2.header {
+  color: #ffffff !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.result-header__description {
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  text-align: justified;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.button,
+.ui-button {
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  height: 42px !important;
+  line-height: 42px !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.group,
+.group.collapse,
+.group .button:disabled {
+  background: transparent !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  border-radius: 12px !important;
+}
+
+.message,
+.infobox {
+  padding: 15px 44px !important;
+  background: #cde3f9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cg fill='%23164d9c'%3E%3Cpath d='M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z'/%3E%3Cpath d='M7 7h2v5H7z'/%3E%3Ccircle cx='8' cy='5' r='1'/%3E%3C/g%3E%3C/svg%3E") no-repeat !important;
+  background-position: 15px 18px !important;
+  color: #164d9c !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+
+form .group .header.group__header {
+  background: #164d9c;
+  color: #ffffff !important;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 52px;
+  border-radius: 12px 12px 0 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+form .group .group__inner label.label * {
+  font-size: 14px;
+  line-height: 18px;
+  color: #164d9c !important;
+}
+
+form .group .group__inner input.fillin.validation-field {
+  border: 2px solid #1a4fbf;
+}
+
+form .group .group__inner .validation-message.error .validation-message__text {
+  color: #cc0000 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+
+.combobox {
+  background: transparent !important;
+  border: 1px solid #164d9c !important;
+  color: #164d9c !important;
+}
+
+.combobox svg path {
+  fill: #164d9c;
+}
+
+.table th,
+.table tr:nth-child(2n) td {
+  background: rgba(22, 77, 156, 0.1) !important;
+  color: #164d9c !important;
+}
+
+/* Optional: remove label if it slipped in */
+.top-banner {
+  display: none !important;
+}
+
+/* Tile styling for background-image blocks */
+.tile {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Tile image tag fallback (if used elsewhere) */
+.tile img {
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+ 
+.button {
+height:auto !important;
+}
+
+#content {
+padding:0px !important;
+}
+      }
+      }
