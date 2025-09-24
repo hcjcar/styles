@@ -55,7 +55,7 @@ h2 {
   font-size: 20px;
   line-height: 28px;
   color: #000000;
-  text-align: justified;
+  text-align: left;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -172,26 +172,6 @@ form .group .group__inner .validation-message.error .validation-message__text {
   display: none !important;
 }
 
-/* Tile styling */
-.tile {
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background-size: cover;
-  background-position: center;
-}
-
-.tile:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-.tile img,
-img {
-  border-radius: 16px;
-}
-
 /* ─── COMBOBOX / FILTER STYLING ───────────────────────────── */
 
 .search-criteria {
@@ -266,7 +246,7 @@ img {
 }
 
 .combobox__control {
-  font-size: 13px;f
+  font-size: 13px;
   color: #266dd3;
   cursor: pointer;
 }
@@ -305,7 +285,7 @@ img {
 /* ─── TILE CUSTOMIZATION ───────────────────────────── */
 .tile {
   width: 320px !important;       /* Adjust width */
-  height: 220px !important;      /* Adjust height */
+  height: auto !important;      /* Adjust height */
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
@@ -321,14 +301,20 @@ img {
 
 .tile img {
   width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;            /* ensures full coverage without stretching */
-  border-radius: 8px;
+  height: auto !important;
+  object-fit: contain;            /* ensures full coverage without stretching */
+  border-radius: 0;
 }
 
-.group group__controls group--state-container {
+
+/* Keep your result header images separate */
+.result-content .result-header__image-container img {
+  border-radius: 8px; /* or whatever radius you want */
+}
+
+.group group__controls .group--state-container {
   background-color: #164d9c !important;
-  boarder-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
 .result-content .result-header__image-container {
