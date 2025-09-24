@@ -51,11 +51,11 @@ h2 {
   text-align: left;
 }
 
-p {
-  color: #164d9c !important;
-  font-size: 20px !important;
-  line-height: 26px !important;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3) !important;
+.result-header__description {
+  color: #164d9c;
+  font-size: 20px;
+  line-height: 26px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
   text-align: left;
 }
 
