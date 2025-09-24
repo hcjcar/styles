@@ -66,9 +66,9 @@ h2.header {
 
 .button {
   border-radius: 8px !important;
-  font-size: 16px !important;
-  height: 42px !important;
-  line-height: 42px !important;
+  font-size: 12px !important;
+  height: 388px !important;
+  line-height: 38px !important;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
