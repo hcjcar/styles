@@ -55,7 +55,7 @@ h2.header {
   font-size: 16px;
   line-height: 28px;
   color: #000000;
-  text-align: justified;
+  text-align: justify;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -265,7 +265,7 @@ img {
 }
 
 .combobox__control {
-  font-size: 13px;f
+  font-size: 13px;
   color: #266dd3;
   cursor: pointer;
 }
@@ -325,9 +325,9 @@ img {
   border-radius: 8px;
 }
 
-.group group__controls group--state-container {
+.group group__controls .group--state-container {
   background-color: #164d9c !important;
-  boarder-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
 .result-content .result-header__image-container {
