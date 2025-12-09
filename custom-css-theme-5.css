@@ -363,3 +363,7 @@ form .group .group__inner .validation-message.error .validation-message__text {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
+.cart-button--display-multiline span:nth-child(2) {
+    display: none;
+}
