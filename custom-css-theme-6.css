@@ -22,7 +22,7 @@ body {
 /* Responsive behavior WITHOUT altering images globally */
 @media (min-width: 769px) {
   h1, h2, p {
-    text-align: center;
+    text-align: left;
   }
 }
 
