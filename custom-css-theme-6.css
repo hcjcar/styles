@@ -26,12 +26,13 @@ body {
   }
 }
 
-/* ✅ Prevent image distortion while keeping responsiveness */
+/* ✅ Image styling: responsive + no distortion + rounded corners */
 img.image {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  border-radius: 16px;
 }
 
 #vsi-footer {
